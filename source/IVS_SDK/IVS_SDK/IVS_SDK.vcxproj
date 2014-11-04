@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{56DEA8E5-F9B3-43B5-A377-27DBEE04422A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>IVS_SDK</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\build\windows\debug\IVS_SDK\bin\</OutDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\build\windows\release\IVS_SDK\bin</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;IVS_SDK_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\IVS_IADraw\inc;..\..\..\..\platform\IVS_COMMON\CBB\release\new\header\openssl\include;..\..\..\..\platform\IVS_COMMON\CBB\release\new\header\ivs_security;..\..\..\..\platform\IVS_COMMON\CBB\release\new\header\ivs_base;..\..\..\..\platform\IVS_COMMON\CBB\release\new\header\ACE_wrappers;..\..\..\..\platform\IVS_COMMON\CBB\third\xml;..\..\IVS_Netsource\inc;..\..\..\..\platform\IVS_MP\IVS_MP_WINDOWS\release\new\windows\header;..\..\IVS_MP\inc;.\;..\inc;.\common;..\inc\common;..\inc\common\BaseThread;.\IVS;.\IVS\Sys;..\..\..\..\platform\IVS_COMMON\inc;..\..\..\..\platform\IVS_BP\release\new\header\bp_net;..\..\..\..\platform\IVS_BP\release\new\header\bp_frame;..\..\..\..\platform\IVS_BP\release\new\header\bp_base;..\..\..\..\platform\IVS_BP\release\new\header\bp_sys;..\..\..\..\platform\IVS_BP\release\new\header\bp_log;..\..\..\..\platform\IVS_BP\release\new\header\bp_protocol\bp_nss;..\IVS_OCXPlayer\Core;..\IVS_SDKTVWall\inc;..\IVS_SDKNetKeyBoard\inc;.\service\Login;.\service\AlarmLinkage;.\service\AlarmMgr;.\service\CapturePicture;.\service\DevicMgr;.\service\Download;.\service\IntelligenceAnalysis;.\service\MotionDetecMgr;.\service\PtzControl;.\service\RealPlay;.\service\Record;.\service\UserInfoMgr;.\service\UserDataMgr;.\service\PlayBack;.\service\Voice;.\service\LogMgr;.\service\Event;..\rtsp_client\header;..\inc\common\ToolsHelp;..\ThirdParty\ZipUtils;.\service\AutoResume;.\service\TVWallMgr;.\service\ClientNetwork;.\service\Telepresence;.\service\ReportMgr;.\service\NetKeyBoard;.\service\UpgradeMgr;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4005;4244;4996;4819;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\build\windows\debug\IVS_SDK\bin;..\..\..\..\platform\IVS_BP\release\new\windows\debug;..\..\..\..\platform\IVS_COMMON\CBB\release\new\windows\debug;..\..\..\..\platform\IVS_BP\release\new\windows\debug\protocols;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ivs_securityd.lib;libeay32.lib;ssleay32.lib;bp_logd.lib;bp_netd.lib;bp_based.lib;ivs_based.lib;bp_framed.lib;ACEd.lib;tinyxml.lib;rtsp_clientd.lib;IVS_NetSourced.lib;IVS_Playerd.lib;IVS_SDKTVWall.lib;IVS_SDKNetKeyBoard.lib;ivs_sftpd.lib;nss.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy "..\..\..\..\platform\IVS_BP\release\new\windows\debug\bp_based.dll" "..\build\windows\debug\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_BP\release\new\windows\debug\bp_framed.dll" "..\build\windows\debug\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_BP\release\new\windows\debug\bp_logd.dll" "..\build\windows\debug\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_BP\release\new\windows\debug\bp_netd.dll" "..\build\windows\debug\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_COMMON\CBB\release\new\windows\debug\ivs_based.dll" "..\build\windows\debug\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_COMMON\CBB\release\new\windows\debug\ivs_sftpd.dll" "..\build\windows\debug\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_COMMON\CBB\release\new\windows\debug\ACEd.dll" "..\build\windows\debug\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_BP\release\new\windows\debug\protocols\nss.dll" "..\build\windows\debug\IVS_SDK\bin\lib\protocols" /y
+copy "..\..\..\..\platform\IVS_BP\release\new\windows\debug\protocols\nss.dll" "..\build\windows\debug\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_COMMON\CBB\release\new\windows\debug\ivs_securityd.dll" "..\build\windows\debug\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_COMMON\CBB\release\new\windows\debug\libeay32.dll" "..\build\windows\debug\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_COMMON\CBB\release\new\windows\debug\ssleay32.dll" "..\build\windows\debug\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_COMMON\CBB\release\new\windows\debug\libssh2d.dll" "..\build\windows\debug\IVS_SDK\bin" /y
+copy "..\lib\windows\Debug\IVS_IADrawd.dll" "..\build\windows\debug\IVS_SDK\bin" /y
+copy "..\lib\windows\Debug\IVS_IADrawd.pdb" "..\build\windows\debug\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_COMMON\CBB\release\new\windows\debug\ivs_compressiond.dll" "..\build\windows\debug\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_COMMON\CBB\release\new\windows\debug\zlibd.dll" "..\build\windows\debug\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_MP\IVS_MP_WINDOWS\lib\windows\Debug\cudart32_42_9.dll" "..\build\windows\debug\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_MP\IVS_MP_WINDOWS\lib\windows\Debug\libmpg123.dll" "..\build\windows\debug\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_MP\IVS_MP_WINDOWS\lib\windows\Debug\mp4DLL.dll" "..\build\windows\debug\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_MP\IVS_MP_WINDOWS\lib\windows\Debug\AnalyzeData.dll" "..\build\windows\debug\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_MP\IVS_MP_WINDOWS\release\new\windows\debug\IVS_Playerd.dll" "..\build\windows\debug\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_MP\IVS_MP_WINDOWS\release\new\windows\debug\IVS_Playerd.lib" "..\build\windows\debug\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_MP\IVS_MP_WINDOWS\release\new\windows\debug\IVS_Playerd.pdb" "..\build\windows\debug\IVS_SDK\bin" /y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;IVS_SDK_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\IVS_IADraw\inc;..\..\..\..\platform\IVS_COMMON\CBB\release\new\header\openssl\include;..\..\..\..\platform\IVS_COMMON\CBB\release\new\header\ivs_security;..\..\..\..\platform\IVS_COMMON\CBB\release\new\header\ivs_base;..\..\..\..\platform\IVS_COMMON\CBB\third\xml;..\..\..\..\platform\IVS_MP\IVS_MP_WINDOWS\release\new\windows\header;..\..\IVS_Netsource\inc;..\..\IVS_MP\inc;.\;..\inc;.\common;..\inc\common;..\inc\common\BaseThread;.\IVS;.\IVS\Sys;..\..\..\..\platform\IVS_COMMON\inc;..\..\..\..\platform\IVS_COMMON\CBB\release\new\header\ACE_wrappers;..\..\..\..\platform\IVS_BP\release\new\header\bp_net;..\..\..\..\platform\IVS_BP\release\new\header\bp_frame;..\..\..\..\platform\IVS_BP\release\new\header\bp_base;..\..\..\..\platform\IVS_BP\release\new\header\bp_sys;..\..\..\..\platform\IVS_BP\release\new\header\bp_log;..\..\..\..\platform\IVS_BP\release\new\header\bp_protocol\bp_nss;..\IVS_SDKTVWall\inc;..\IVS_SDKNetKeyBoard\inc;.\service\Login;.\service\AlarmLinkage;.\service\AlarmMgr;.\service\CapturePicture;.\service\DevicMgr;.\service\Download;.\service\IntelligenceAnalysis;.\service\MotionDetecMgr;.\service\PtzControl;.\service\RealPlay;.\service\Record;.\service\UserInfoMgr;.\service\UserDataMgr;.\service\PlayBack;.\service\Voice;.\service\LogMgr;.\service\Event;..\rtsp_client\header;..\inc\common\ToolsHelp;..\ThirdParty\ZipUtils;.\service\AutoResume;.\service\ClientNetwork;.\service\TVWallMgr;.\service\Telepresence;.\service\ReportMgr;.\service\NetKeyBoard;.\service\UpgradeMgr</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4005;4244;4996;4819;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\build\windows\release\IVS_SDK\bin;..\..\..\..\platform\IVS_BP\release\new\windows\release;..\..\..\..\platform\IVS_COMMON\CBB\release\new\windows\release;..\..\..\..\platform\IVS_BP\release\new\windows\release\protocols;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ivs_security.lib;libeay32.lib;ssleay32.lib;bp_log.lib;bp_net.lib;bp_base.lib;bp_frame.lib;ACE.lib;tinyxml.lib;nss.lib;rtsp_client.lib;IVS_NetSource.lib;IVS_Player.lib;IVS_SDKTVWall.lib;IVS_SDKNetKeyBoard.lib;ivs_base.lib;ivs_sftp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy "..\..\..\..\platform\IVS_BP\release\new\windows\release\bp_base.dll" "..\build\windows\release\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_BP\release\new\windows\release\bp_frame.dll" "..\build\windows\release\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_BP\release\new\windows\release\bp_log.dll" "..\build\windows\release\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_BP\release\new\windows\release\bp_net.dll" "..\build\windows\release\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_COMMON\CBB\release\new\windows\release\ivs_base.dll" "..\build\windows\release\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_COMMON\CBB\release\new\windows\release\ivs_sftp.dll" "..\build\windows\release\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_COMMON\CBB\release\new\windows\release\ACE.dll" "..\build\windows\release\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_BP\release\new\windows\release\protocols\nss.dll" "..\build\windows\release\IVS_SDK\bin\lib\protocols" /y
+copy "..\..\..\..\platform\IVS_BP\release\new\windows\release\protocols\nss.dll" "..\build\windows\release\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_COMMON\CBB\release\new\windows\release\ivs_security.dll" "..\build\windows\release\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_COMMON\CBB\release\new\windows\release\libeay32.dll" "..\build\windows\release\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_COMMON\CBB\release\new\windows\release\ssleay32.dll" "..\build\windows\release\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_COMMON\CBB\release\new\windows\release\libssh2.dll" "..\build\windows\release\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_COMMON\CBB\release\new\windows\release\ivs_compression.dll" "..\build\windows\release\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_COMMON\CBB\release\new\windows\release\zlib.dll" "..\build\windows\release\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_MP\IVS_MP_WINDOWS\lib\windows\Release\cudart32_42_9.dll" "..\build\windows\release\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_MP\IVS_MP_WINDOWS\lib\windows\Release\libmpg123.dll" "..\build\windows\release\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_MP\IVS_MP_WINDOWS\lib\windows\Release\mp4DLL.dll" "..\build\windows\release\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_MP\IVS_MP_WINDOWS\lib\windows\Release\AnalyzeData.dll" "..\build\windows\release\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_MP\IVS_MP_WINDOWS\release\new\windows\release\IVS_Player.dll" "..\build\windows\release\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_MP\IVS_MP_WINDOWS\release\new\windows\release\IVS_Player.lib" "..\build\windows\release\IVS_SDK\bin" /y
+copy "..\..\..\..\platform\IVS_MP\IVS_MP_WINDOWS\release\new\windows\release\IVS_Player.pdb" "..\build\windows\release\IVS_SDK\bin" /y
+copy "..\lib\windows\Release\IVS_IADraw.dll" "..\build\windows\release\IVS_SDK\bin" /y
+copy "..\lib\windows\Release\IVS_IADraw.pdb" "..\build\windows\release\IVS_SDK\bin" /y</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\platform\IVS_COMMON\inc\hwsdk.h" />
+    <ClInclude Include="..\..\..\..\platform\IVS_COMMON\inc\ivs_error.h" />
+    <ClInclude Include="..\..\..\..\platform\IVS_COMMON\inc\nss_mt.h" />
+    <ClInclude Include="..\inc\common\BaseThread\BaseJob.h" />
+    <ClInclude Include="..\inc\common\BaseThread\_BaseThread.h" />
+    <ClInclude Include="..\inc\common\IVS_Trace.h" />
+    <ClInclude Include="..\inc\common\SDKTimer.h" />
+    <ClInclude Include="..\inc\common\ToolsHelp\ParaCheck.h" />
+    <ClInclude Include="..\inc\common\ToolsHelp\SDKConfig.h" />
+    <ClInclude Include="..\inc\common\ToolsHelp\ToolsHelp.h" />
+    <ClInclude Include="..\inc\IVS_SDK.h" />
+    <ClInclude Include="..\inc\QueryFiled.h" />
+    <ClInclude Include="..\inc\SDKDef.h" />
+    <ClInclude Include="..\ThirdParty\ZipUtils\unzip.h" />
+    <ClInclude Include="..\ThirdParty\ZipUtils\zip.h" />
+    <ClInclude Include="IVS\Aes256Operator.h" />
+    <ClInclude Include="IVS\DomainRouteMgr.h" />
+    <ClInclude Include="IVS\NSSOperator.h" />
+    <ClInclude Include="IVS\SDKInterface.h" />
+    <ClInclude Include="IVS\SDKMainCtrl.h" />
+    <ClInclude Include="IVS\SDKMainService.h" />
+    <ClInclude Include="IVS\Sys\LockGuard.h" />
+    <ClInclude Include="IVS\Sys\vos.h" />
+    <ClInclude Include="IVS\Sys\vos_atomic.h" />
+    <ClInclude Include="IVS\Sys\vos_basetype.h" />
+    <ClInclude Include="IVS\Sys\vos_common.h" />
+    <ClInclude Include="IVS\Sys\vos_config.h" />
+    <ClInclude Include="IVS\Sys\vos_errno.h" />
+    <ClInclude Include="IVS\UserMgr.h" />
+    <ClInclude Include="IVS\XmlProcess.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SDKSecurityClient.h" />
+    <ClInclude Include="service\AlarmLinkage\AlarmLinkageMgr.h" />
+    <ClInclude Include="service\AlarmLinkage\AlarmLinkageXMLProcess.h" />
+    <ClInclude Include="service\AlarmMgr\AlarmAreaMgr.h" />
+    <ClInclude Include="service\AlarmMgr\AlarmHelpMgr.h" />
+    <ClInclude Include="service\AlarmMgr\AlarmLevelMgr.h" />
+    <ClInclude Include="service\AlarmMgr\AlarmMgr.h" />
+    <ClInclude Include="service\AlarmMgr\AlarmMgrXMLProcess.h" />
+    <ClInclude Include="service\AutoResume\AutoResume.h" />
+    <ClInclude Include="service\AutoResume\CloseLinkCount.h" />
+    <ClInclude Include="service\AutoResume\ReLink.h" />
+    <ClInclude Include="service\CapturePicture\CapturePicture.h" />
+    <ClInclude Include="service\CapturePicture\CapturePictureXMLProcess.h" />
+    <ClInclude Include="service\ClientNetwork\ClientNetworkMgr.h" />
+    <ClInclude Include="service\ClientNetwork\ClientNetworkMgrXMLProcess.h" />
+    <ClInclude Include="service\DevicMgr\devEnum.h" />
+    <ClInclude Include="service\DevicMgr\DeviceGroupMgr.h" />
+    <ClInclude Include="service\DevicMgr\DeviceMgr.h" />
+    <ClInclude Include="service\DevicMgr\DeviceMgrXMLProcess.h" />
+    <ClInclude Include="service\DevicMgr\DeviceParaConfig.h" />
+    <ClInclude Include="service\DevicMgr\DeviceParaConfigXMLProcess.h" />
+    <ClInclude Include="service\Download\Download.h" />
+    <ClInclude Include="service\Download\DownloadManger.h" />
+    <ClInclude Include="service\Event\EventCallBackJob.h" />
+    <ClInclude Include="service\Event\EventMgr.h" />
+    <ClInclude Include="service\Event\StreamEventMgr.h" />
+    <ClInclude Include="service\IntelligenceAnalysis\IntelligenceAnalysisMgr.h" />
+    <ClInclude Include="service\Login\LinkRouteMgr.h" />
+    <ClInclude Include="service\Login\LoginXMLProcess.h" />
+    <ClInclude Include="service\LogMgr\LogMgr.h" />
+    <ClInclude Include="service\LogMgr\LogMgrXMLProcess.h" />
+    <ClInclude Include="service\MotionDetecMgr\MotionDetecMgrXMLProcess.h" />
+    <ClInclude Include="service\MotionDetecMgr\MotionDetection.h" />
+    <ClInclude Include="service\NetKeyBoard\NetKeyBoard.h" />
+    <ClInclude Include="service\PlayBack\LocalPlayback.h" />
+    <ClInclude Include="service\PlayBack\Playback.h" />
+    <ClInclude Include="service\PlayBack\PlaybackMgr.h" />
+    <ClInclude Include="service\PlayBack\PlayBackXMLProcess.h" />
+    <ClInclude Include="service\PtzControl\PtzControl.h" />
+    <ClInclude Include="service\PtzControl\PtzControlXMLProcess.h" />
+    <ClInclude Include="service\RealPlay\MediaBase.h" />
+    <ClInclude Include="service\RealPlay\MediaXMLProcess.h" />
+    <ClInclude Include="service\RealPlay\ParseSdp.h" />
+    <ClInclude Include="service\RealPlay\RealPlay.h" />
+    <ClInclude Include="service\RealPlay\RealPlayBookmark.h" />
+    <ClInclude Include="service\RealPlay\RealPlayMgr.h" />
+    <ClInclude Include="service\RealPlay\RealXMLProcess.h" />
+    <ClInclude Include="service\Record\Record.h" />
+    <ClInclude Include="service\Record\RecordBackupMgr.h" />
+    <ClInclude Include="service\Record\RecordBookmark.h" />
+    <ClInclude Include="service\Record\RecordList.h" />
+    <ClInclude Include="service\Record\RecordPlanMgr.h" />
+    <ClInclude Include="service\Login\LoginMgr.h" />
+    <ClInclude Include="service\Login\UserInfo.h" />
+    <ClInclude Include="service\Record\RecordQueryInCluster.h" />
+    <ClInclude Include="service\Record\RecordService.h" />
+    <ClInclude Include="service\Record\RecordXMLProcess.h" />
+    <ClInclude Include="service\ReportMgr\ReportMgr.h" />
+    <ClInclude Include="service\Telepresence\TelepresenceMgr.h" />
+    <ClInclude Include="service\Telepresence\TPPlayChannel.h" />
+    <ClInclude Include="service\TVWallMgr\AutoResumeTrigger.h" />
+    <ClInclude Include="service\tvwallmgr\RDAChannel.h" />
+    <ClInclude Include="service\tvwallmgr\SDKChannel.h" />
+    <ClInclude Include="service\tvwallmgr\SDKDecoderMgr.h" />
+    <ClInclude Include="service\tvwallmgr\PlayThread.h" />
+    <ClInclude Include="service\TVWallMgr\TVWallMgr.h" />
+    <ClInclude Include="service\TVWallMgr\DecoderChannel.h" />
+    <ClInclude Include="service\UpgradeMgr\UpgradeMgr.h" />
+    <ClInclude Include="service\UpgradeMgr\UpgradeMgrXMLProcess.h" />
+    <ClInclude Include="service\UserDataMgr\UserDataMgr.h" />
+    <ClInclude Include="service\UserInfoMgr\RoleMgr.h" />
+    <ClInclude Include="service\UserInfoMgr\UserGroupMgr.h" />
+    <ClInclude Include="service\UserInfoMgr\UserInfoMgr.h" />
+    <ClInclude Include="service\UserInfoMgr\UserInfoMgrXMLProcess.h" />
+    <ClInclude Include="service\Voice\AudioMgr.h" />
+    <ClInclude Include="service\Voice\AudioObj.h" />
+    <ClInclude Include="service\Voice\StreamData.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\inc\common\BaseThread\BaseJob.cpp" />
+    <ClCompile Include="..\inc\common\BaseThread\_BaseThread.cpp" />
+    <ClCompile Include="..\inc\common\SDKTimer.cpp" />
+    <ClCompile Include="..\inc\common\ToolsHelp\ParaCheck.cpp" />
+    <ClCompile Include="..\inc\common\ToolsHelp\SDKConfig.cpp" />
+    <ClCompile Include="..\inc\common\ToolsHelp\ToolsHelp.cpp" />
+    <ClCompile Include="..\ThirdParty\ZipUtils\unzip.cpp" />
+    <ClCompile Include="..\ThirdParty\ZipUtils\zip.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="IVS\Aes256Operator.cpp" />
+    <ClCompile Include="IVS\DomainRouteMgr.cpp" />
+    <ClCompile Include="IVS\NSSOperator.cpp" />
+    <ClCompile Include="IVS\SDKInterface.cpp" />
+    <ClCompile Include="IVS\SDKMainCtrl.cpp" />
+    <ClCompile Include="IVS\SDKMainService.cpp" />
+    <ClCompile Include="IVS\Sys\CriticalSectionEx.cpp" />
+    <ClCompile Include="IVS\Sys\LockGuard.cpp" />
+    <ClCompile Include="IVS\Sys\vos_mem.cpp" />
+    <ClCompile Include="IVS\Sys\vos_mutex.cpp" />
+    <ClCompile Include="IVS\Sys\vos_sema.cpp" />
+    <ClCompile Include="IVS\Sys\vos_thread.cpp" />
+    <ClCompile Include="IVS\Sys\vos_time.cpp" />
+    <ClCompile Include="IVS\UserMgr.cpp" />
+    <ClCompile Include="IVS\XmlProcess.cpp" />
+    <ClCompile Include="IVS_SDK.cpp" />
+    <ClCompile Include="SDKSecurityClient.cpp" />
+    <ClCompile Include="service\AlarmLinkage\AlarmLinkageMgr.cpp" />
+    <ClCompile Include="service\AlarmLinkage\AlarmLinkageXMLProcess.cpp" />
+    <ClCompile Include="service\AlarmMgr\AlarmAreaMgr.cpp" />
+    <ClCompile Include="service\AlarmMgr\AlarmHelpMgr.cpp" />
+    <ClCompile Include="service\AlarmMgr\AlarmLevelMgr.cpp" />
+    <ClCompile Include="service\AlarmMgr\AlarmMgr.cpp" />
+    <ClCompile Include="service\AlarmMgr\AlarmMgrXMLProcess.cpp" />
+    <ClCompile Include="service\AutoResume\AutoResume.cpp" />
+    <ClCompile Include="service\AutoResume\CloseLinkCount.cpp" />
+    <ClCompile Include="service\AutoResume\ReLink.cpp" />
+    <ClCompile Include="service\CapturePicture\CapturePicture.cpp" />
+    <ClCompile Include="service\CapturePicture\CapturePictureXMLProcess.cpp" />
+    <ClCompile Include="service\ClientNetwork\ClientNetworkMgr.cpp" />
+    <ClCompile Include="service\ClientNetwork\ClientNetworkMgrXMLProcess.cpp" />
+    <ClCompile Include="service\DevicMgr\devEnum.cpp" />
+    <ClCompile Include="service\DevicMgr\DeviceGroupMgr.cpp" />
+    <ClCompile Include="service\DevicMgr\DeviceMgr.cpp" />
+    <ClCompile Include="service\DevicMgr\DeviceMgrXMLProcess.cpp" />
+    <ClCompile Include="service\DevicMgr\DeviceParaConfig.cpp" />
+    <ClCompile Include="service\DevicMgr\DeviceParaConfigXMLProcess.cpp" />
+    <ClCompile Include="service\Download\Download.cpp" />
+    <ClCompile Include="service\Download\DownloadManger.cpp" />
+    <ClCompile Include="service\Event\EventCallBackJob.cpp" />
+    <ClCompile Include="service\Event\EventMgr.cpp" />
+    <ClCompile Include="service\Event\StreamEventMgr.cpp" />
+    <ClCompile Include="service\IntelligenceAnalysis\IntelligenceAnalysisMgr.cpp" />
+    <ClCompile Include="service\Login\LinkRouteMgr.cpp" />
+    <ClCompile Include="service\Login\LoginXMLProcess.cpp" />
+    <ClCompile Include="service\LogMgr\LogMgr.cpp" />
+    <ClCompile Include="service\LogMgr\LogMgrXMLProcess.cpp" />
+    <ClCompile Include="service\MotionDetecMgr\MotionDetecMgrXMLProcess.cpp" />
+    <ClCompile Include="service\MotionDetecMgr\MotionDetection.cpp" />
+    <ClCompile Include="service\NetKeyBoard\NetKeyBoard.cpp" />
+    <ClCompile Include="service\PlayBack\LocalPlayback.cpp" />
+    <ClCompile Include="service\PlayBack\Playback.cpp" />
+    <ClCompile Include="service\PlayBack\PlaybackMgr.cpp" />
+    <ClCompile Include="service\PlayBack\PlayBackXMLProcess.cpp" />
+    <ClCompile Include="service\PtzControl\PtzControl.cpp" />
+    <ClCompile Include="service\PtzControl\PtzControlXMLProcess.cpp" />
+    <ClCompile Include="service\RealPlay\MediaBase.cpp" />
+    <ClCompile Include="service\RealPlay\MediaXMLProcess.cpp" />
+    <ClCompile Include="service\RealPlay\ParseSdp.cpp" />
+    <ClCompile Include="service\RealPlay\RealPlay.cpp" />
+    <ClCompile Include="service\RealPlay\RealPlayBookmark.cpp" />
+    <ClCompile Include="service\RealPlay\RealPlayMgr.cpp" />
+    <ClCompile Include="service\RealPlay\RealXMLProcess.cpp" />
+    <ClCompile Include="service\Record\Record.cpp" />
+    <ClCompile Include="service\Record\RecordBackupMgr.cpp" />
+    <ClCompile Include="service\Record\RecordBookmark.cpp" />
+    <ClCompile Include="service\Record\RecordList.cpp" />
+    <ClCompile Include="service\Record\RecordPlanMgr.cpp" />
+    <ClCompile Include="service\Login\LoginMgr.cpp" />
+    <ClCompile Include="service\Login\UserInfo.cpp" />
+    <ClCompile Include="service\Record\RecordQueryInCluster.cpp" />
+    <ClCompile Include="service\Record\RecordService.cpp" />
+    <ClCompile Include="service\Record\RecordXMLProcess.cpp" />
+    <ClCompile Include="service\ReportMgr\ReportMgr.cpp" />
+    <ClCompile Include="service\Telepresence\TelepresenceMgr.cpp" />
+    <ClCompile Include="service\Telepresence\TPPlayChannel.cpp" />
+    <ClCompile Include="service\TVWallMgr\AutoResumeTrigger.cpp" />
+    <ClCompile Include="service\tvwallmgr\RDAChannel.cpp" />
+    <ClCompile Include="service\tvwallmgr\SDKChannel.cpp" />
+    <ClCompile Include="service\tvwallmgr\SDKDecoderMgr.cpp" />
+    <ClCompile Include="service\tvwallmgr\PlayThread.cpp" />
+    <ClCompile Include="service\TVWallMgr\TVWallMgr.cpp" />
+    <ClCompile Include="service\TVWallMgr\DecoderChannel.cpp" />
+    <ClCompile Include="service\UpgradeMgr\UpgradeMgr.cpp" />
+    <ClCompile Include="service\UpgradeMgr\UpgradeMgrXMLProcess.cpp" />
+    <ClCompile Include="service\UserDataMgr\UserDataMgr.cpp" />
+    <ClCompile Include="service\UserInfoMgr\RoleMgr.cpp" />
+    <ClCompile Include="service\UserInfoMgr\UserGroupMgr.cpp" />
+    <ClCompile Include="service\UserInfoMgr\UserInfoMgr.cpp" />
+    <ClCompile Include="service\UserInfoMgr\UserInfoMgrXMLProcess.cpp" />
+    <ClCompile Include="service\Voice\AudioMgr.cpp" />
+    <ClCompile Include="service\Voice\AudioObj.cpp" />
+    <ClCompile Include="service\Voice\StreamData.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IVS_SDK.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

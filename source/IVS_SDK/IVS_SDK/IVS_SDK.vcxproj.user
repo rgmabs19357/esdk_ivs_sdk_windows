@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ShowAllFiles>false</ShowAllFiles>
+    <DevPartner_IsInstrumented Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">1</DevPartner_IsInstrumented>
+    <DevPartner_Instrumented_Type Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /NMbcOn</DevPartner_Instrumented_Type>
+    <DevPartner_IsInstrumented Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">1</DevPartner_IsInstrumented>
+    <DevPartner_Instrumented_Type Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /NMbcOn</DevPartner_Instrumented_Type>
+  </PropertyGroup>
+</Project>

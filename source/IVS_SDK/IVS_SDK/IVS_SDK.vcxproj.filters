@@ -1,0 +1,767 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\IVS">
+      <UniqueIdentifier>{02ce9650-21bc-4e6c-a5b7-9133b3f2461b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service">
+      <UniqueIdentifier>{67109579-ee45-47c8-998d-fdd7da96c55b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\AlarmLinkage">
+      <UniqueIdentifier>{cfadbfcf-dacf-4ea7-b348-ec2a8ed4e58b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\CapturePicture">
+      <UniqueIdentifier>{e391cd2a-3901-412a-8fa7-77483f29db49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\Download">
+      <UniqueIdentifier>{b38ec034-8d57-48d4-8239-f8ef35d54d93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\IntelligenceAnalysis">
+      <UniqueIdentifier>{46f86f4d-c934-428a-bb67-bd925a9fbc2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\Login">
+      <UniqueIdentifier>{94dbdbc5-51e7-4cc7-bd5d-1e0785e1062f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\RealPlay">
+      <UniqueIdentifier>{ca3e2bfc-bbc8-4645-9dfb-554ce9d9355b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\Record">
+      <UniqueIdentifier>{54e9f774-ab5c-4faf-9800-7876b677e1b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\Voice">
+      <UniqueIdentifier>{07dfd9fc-313e-40e3-b08c-8dca14a0b854}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\Log">
+      <UniqueIdentifier>{8539918d-4b17-48aa-a336-e61b5401cf4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\MotionDetecMgr">
+      <UniqueIdentifier>{7ab2e3c7-efd0-4f60-a91c-d3b086634ce2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\AlarmMgr">
+      <UniqueIdentifier>{0e57168c-b055-467f-950b-9faf21608c6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\UserInfoMgr">
+      <UniqueIdentifier>{013b7aee-0508-49b1-97c3-054e7aa6207c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\PlayBack">
+      <UniqueIdentifier>{eb3a16a0-14d6-443b-aaff-2a909628bb8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\Event">
+      <UniqueIdentifier>{95d6d491-d0f3-4992-925d-82e45b86ba77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\PtzControl">
+      <UniqueIdentifier>{805e59f8-2f9e-4b3d-ae9a-c6824c05f7a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="inc\IVS">
+      <UniqueIdentifier>{8d6248e7-216e-4580-a257-84a573e04f90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\RouteMgr">
+      <UniqueIdentifier>{36ad7f3c-a331-4653-84d9-46b9ccafc1b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\common">
+      <UniqueIdentifier>{ad6d944c-3431-4c0a-92f1-f7d4be26e608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\common\Sys">
+      <UniqueIdentifier>{ffd29c37-77ec-4379-91bc-8c77a32c46da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\common\thread">
+      <UniqueIdentifier>{2f42da88-2c48-4558-b3c2-545027ba9d10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\common\xml">
+      <UniqueIdentifier>{e6785ff1-a4e5-42e8-8744-95e65b2e92e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\common\toolshelp">
+      <UniqueIdentifier>{4cd5beb9-a940-4fee-85a5-716f9e10d48c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\common\ZipUtils">
+      <UniqueIdentifier>{835057c2-a853-45cb-849d-631f8285749a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\TVWallMgr">
+      <UniqueIdentifier>{7d240dda-6866-4aa3-9531-c13125df477a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\UserDataMgr">
+      <UniqueIdentifier>{3441f5ff-405d-45e9-9428-f29dbb8d3c1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\DeviceMgr">
+      <UniqueIdentifier>{bea0a582-1e98-4c16-999f-76469202940c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\AutoResume">
+      <UniqueIdentifier>{026fa1d4-52fe-4e38-9431-8410d2a92d58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\ClientNetwork">
+      <UniqueIdentifier>{d54cb3c8-26b8-41ad-a567-92ff0414274b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\ReportMgr">
+      <UniqueIdentifier>{073c9d30-8386-4d70-a9ee-826178c11d4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\NetKeyBoard">
+      <UniqueIdentifier>{ca3169ec-fe87-4d2e-82cc-eedfb6380690}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\Telepresence">
+      <UniqueIdentifier>{00727ee7-2123-42e6-8c28-81a9b2a35538}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\UpgradeMgr">
+      <UniqueIdentifier>{2449af5c-bfc5-4bff-b5f0-49b47fd739e1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IVS\SDKInterface.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="IVS\UserMgr.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="IVS\Sys\vos.h">
+      <Filter>inc\common\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="IVS\Sys\vos_basetype.h">
+      <Filter>inc\common\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="IVS\Sys\vos_common.h">
+      <Filter>inc\common\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="IVS\Sys\vos_config.h">
+      <Filter>inc\common\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="IVS\Sys\vos_errno.h">
+      <Filter>inc\common\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>inc\IVS</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>inc\IVS</Filter>
+    </ClInclude>
+    <ClInclude Include="IVS\SDKMainCtrl.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="IVS\NSSOperator.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="service\Record\RecordPlanMgr.h">
+      <Filter>service\Record</Filter>
+    </ClInclude>
+    <ClInclude Include="service\Record\RecordList.h">
+      <Filter>service\Record</Filter>
+    </ClInclude>
+    <ClInclude Include="service\RealPlay\MediaBase.h">
+      <Filter>service\RealPlay</Filter>
+    </ClInclude>
+    <ClInclude Include="service\RealPlay\RealPlay.h">
+      <Filter>service\RealPlay</Filter>
+    </ClInclude>
+    <ClInclude Include="service\Record\RecordService.h">
+      <Filter>service\Record</Filter>
+    </ClInclude>
+    <ClInclude Include="service\Record\Record.h">
+      <Filter>service\Record</Filter>
+    </ClInclude>
+    <ClInclude Include="service\LogMgr\LogMgr.h">
+      <Filter>service\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="service\Login\UserInfo.h">
+      <Filter>service\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="service\Login\LoginMgr.h">
+      <Filter>service\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="service\AlarmMgr\AlarmAreaMgr.h">
+      <Filter>service\AlarmMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\AlarmMgr\AlarmHelpMgr.h">
+      <Filter>service\AlarmMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\AlarmMgr\AlarmLevelMgr.h">
+      <Filter>service\AlarmMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\AlarmMgr\AlarmMgr.h">
+      <Filter>service\AlarmMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\UserInfoMgr\RoleMgr.h">
+      <Filter>service\UserInfoMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\UserInfoMgr\UserGroupMgr.h">
+      <Filter>service\UserInfoMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\UserInfoMgr\UserInfoMgr.h">
+      <Filter>service\UserInfoMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\DevicMgr\DeviceParaConfig.h">
+      <Filter>service\DeviceMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\QueryFiled.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="service\Event\EventCallBackJob.h">
+      <Filter>service\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="service\Event\EventMgr.h">
+      <Filter>service\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="IVS\Aes256Operator.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="IVS\SDKMainService.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="service\DevicMgr\DeviceMgr.h">
+      <Filter>service\DeviceMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\DevicMgr\DeviceGroupMgr.h">
+      <Filter>service\DeviceMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\SDKDef.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="service\AlarmLinkage\AlarmLinkageXMLProcess.h">
+      <Filter>service\AlarmLinkage</Filter>
+    </ClInclude>
+    <ClInclude Include="service\AlarmMgr\AlarmMgrXMLProcess.h">
+      <Filter>service\AlarmMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\LogMgr\LogMgrXMLProcess.h">
+      <Filter>service\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="service\Login\LoginXMLProcess.h">
+      <Filter>service\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="service\MotionDetecMgr\MotionDetecMgrXMLProcess.h">
+      <Filter>service\MotionDetecMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\PtzControl\PtzControlXMLProcess.h">
+      <Filter>service\PtzControl</Filter>
+    </ClInclude>
+    <ClInclude Include="service\Record\RecordXMLProcess.h">
+      <Filter>service\Record</Filter>
+    </ClInclude>
+    <ClInclude Include="service\UserInfoMgr\UserInfoMgrXMLProcess.h">
+      <Filter>service\UserInfoMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\common\BaseThread\_BaseThread.h">
+      <Filter>inc\common\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\common\BaseThread\BaseJob.h">
+      <Filter>inc\common\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="IVS\XmlProcess.h">
+      <Filter>inc\common\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\common\ToolsHelp\ToolsHelp.h">
+      <Filter>inc\common\toolshelp</Filter>
+    </ClInclude>
+    <ClInclude Include="service\DevicMgr\devEnum.h">
+      <Filter>service\DeviceMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\Login\LinkRouteMgr.h">
+      <Filter>service\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="service\DevicMgr\DeviceMgrXMLProcess.h">
+      <Filter>service\DeviceMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\ZipUtils\unzip.h">
+      <Filter>inc\common\ZipUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\ZipUtils\zip.h">
+      <Filter>inc\common\ZipUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="service\PlayBack\PlaybackMgr.h">
+      <Filter>service\PlayBack</Filter>
+    </ClInclude>
+    <ClInclude Include="service\PlayBack\PlayBackXMLProcess.h">
+      <Filter>service\PlayBack</Filter>
+    </ClInclude>
+    <ClInclude Include="service\Record\RecordBookmark.h">
+      <Filter>service\Record</Filter>
+    </ClInclude>
+    <ClInclude Include="service\PtzControl\PtzControl.h">
+      <Filter>service\PtzControl</Filter>
+    </ClInclude>
+    <ClInclude Include="service\MotionDetecMgr\MotionDetection.h">
+      <Filter>service\MotionDetecMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\CapturePicture\CapturePicture.h">
+      <Filter>service\CapturePicture</Filter>
+    </ClInclude>
+    <ClInclude Include="service\CapturePicture\CapturePictureXMLProcess.h">
+      <Filter>service\CapturePicture</Filter>
+    </ClInclude>
+    <ClInclude Include="service\PlayBack\LocalPlayback.h">
+      <Filter>service\PlayBack</Filter>
+    </ClInclude>
+    <ClInclude Include="service\Download\Download.h">
+      <Filter>service\Download</Filter>
+    </ClInclude>
+    <ClInclude Include="IVS\Sys\LockGuard.h">
+      <Filter>inc\common\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="service\AlarmLinkage\AlarmLinkageMgr.h">
+      <Filter>service\AlarmLinkage</Filter>
+    </ClInclude>
+    <ClInclude Include="service\IntelligenceAnalysis\IntelligenceAnalysisMgr.h">
+      <Filter>service\IntelligenceAnalysis</Filter>
+    </ClInclude>
+    <ClInclude Include="service\PlayBack\Playback.h">
+      <Filter>service\PlayBack</Filter>
+    </ClInclude>
+    <ClInclude Include="IVS\DomainRouteMgr.h">
+      <Filter>service\RouteMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\DevicMgr\DeviceParaConfigXMLProcess.h">
+      <Filter>service\DeviceMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\TVWallMgr\TVWallMgr.h">
+      <Filter>service\TVWallMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\UserDataMgr\UserDataMgr.h">
+      <Filter>service\UserDataMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\RealPlay\RealPlayMgr.h">
+      <Filter>service\RealPlay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\IVS_SDK.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\common\SDKTimer.h">
+      <Filter>inc\common\toolshelp</Filter>
+    </ClInclude>
+    <ClInclude Include="service\AutoResume\AutoResume.h">
+      <Filter>service\AutoResume</Filter>
+    </ClInclude>
+    <ClInclude Include="service\AutoResume\ReLink.h">
+      <Filter>service\AutoResume</Filter>
+    </ClInclude>
+    <ClInclude Include="service\AutoResume\CloseLinkCount.h">
+      <Filter>service\AutoResume</Filter>
+    </ClInclude>
+    <ClInclude Include="service\TVWallMgr\DecoderChannel.h">
+      <Filter>service\TVWallMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\TVWallMgr\AutoResumeTrigger.h">
+      <Filter>service\TVWallMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\tvwallmgr\PlayThread.h">
+      <Filter>service\TVWallMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\common\IVS_Trace.h">
+      <Filter>inc\common</Filter>
+    </ClInclude>
+    <ClInclude Include="SDKSecurityClient.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\common\ToolsHelp\SDKConfig.h">
+      <Filter>inc\common\toolshelp</Filter>
+    </ClInclude>
+    <ClInclude Include="service\tvwallmgr\SDKDecoderMgr.h">
+      <Filter>service\TVWallMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\common\ToolsHelp\ParaCheck.h">
+      <Filter>inc\common\toolshelp</Filter>
+    </ClInclude>
+    <ClInclude Include="service\tvwallmgr\SDKChannel.h">
+      <Filter>service\TVWallMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\tvwallmgr\RDAChannel.h">
+      <Filter>service\TVWallMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\ClientNetwork\ClientNetworkMgr.h">
+      <Filter>service\ClientNetwork</Filter>
+    </ClInclude>
+    <ClInclude Include="service\ClientNetwork\ClientNetworkMgrXMLProcess.h">
+      <Filter>service\ClientNetwork</Filter>
+    </ClInclude>
+    <ClInclude Include="service\Record\RecordBackupMgr.h">
+      <Filter>service\Record</Filter>
+    </ClInclude>
+    <ClInclude Include="service\RealPlay\ParseSdp.h">
+      <Filter>service\RealPlay</Filter>
+    </ClInclude>
+    <ClInclude Include="service\RealPlay\MediaXMLProcess.h">
+      <Filter>service\RealPlay</Filter>
+    </ClInclude>
+    <ClInclude Include="service\Record\RecordQueryInCluster.h">
+      <Filter>service\Record</Filter>
+    </ClInclude>
+    <ClInclude Include="service\Download\DownloadManger.h">
+      <Filter>service\Download</Filter>
+    </ClInclude>
+    <ClInclude Include="service\Telepresence\TelepresenceMgr.h">
+      <Filter>service\Telepresence</Filter>
+    </ClInclude>
+    <ClInclude Include="service\Telepresence\TPPlayChannel.h">
+      <Filter>service\Telepresence</Filter>
+    </ClInclude>
+    <ClInclude Include="service\ReportMgr\ReportMgr.h">
+      <Filter>service\ReportMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\Voice\AudioMgr.h">
+      <Filter>service\Voice</Filter>
+    </ClInclude>
+    <ClInclude Include="service\Voice\AudioObj.h">
+      <Filter>service\Voice</Filter>
+    </ClInclude>
+    <ClInclude Include="service\Voice\StreamData.h">
+      <Filter>service\Voice</Filter>
+    </ClInclude>
+    <ClInclude Include="service\Event\StreamEventMgr.h">
+      <Filter>service\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="service\RealPlay\RealPlayBookmark.h">
+      <Filter>service\RealPlay</Filter>
+    </ClInclude>
+    <ClInclude Include="service\RealPlay\RealXMLProcess.h">
+      <Filter>service\RealPlay</Filter>
+    </ClInclude>
+    <ClInclude Include="service\UpgradeMgr\UpgradeMgr.h">
+      <Filter>service\UpgradeMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\UpgradeMgr\UpgradeMgrXMLProcess.h">
+      <Filter>service\UpgradeMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="IVS\Sys\vos_atomic.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="service\NetKeyBoard\NetKeyBoard.h">
+      <Filter>service\NetKeyBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\platform\IVS_COMMON\inc\hwsdk.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\platform\IVS_COMMON\inc\ivs_error.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\platform\IVS_COMMON\inc\nss_mt.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="IVS\UserMgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IVS\Sys\vos_mem.cpp">
+      <Filter>inc\common\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="IVS\Sys\vos_mutex.cpp">
+      <Filter>inc\common\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="IVS\Sys\vos_sema.cpp">
+      <Filter>inc\common\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="IVS\Sys\vos_thread.cpp">
+      <Filter>inc\common\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="IVS\Sys\vos_time.cpp">
+      <Filter>inc\common\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files\IVS</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files\IVS</Filter>
+    </ClCompile>
+    <ClCompile Include="IVS\SDKMainCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IVS\SDKInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IVS\NSSOperator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IVS\Sys\CriticalSectionEx.cpp">
+      <Filter>inc\common\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="service\AlarmMgr\AlarmAreaMgr.cpp">
+      <Filter>service\AlarmMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\AlarmMgr\AlarmHelpMgr.cpp">
+      <Filter>service\AlarmMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\AlarmMgr\AlarmLevelMgr.cpp">
+      <Filter>service\AlarmMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\AlarmMgr\AlarmMgr.cpp">
+      <Filter>service\AlarmMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\LogMgr\LogMgr.cpp">
+      <Filter>service\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="service\DevicMgr\DeviceParaConfig.cpp">
+      <Filter>service\DeviceMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\UserInfoMgr\RoleMgr.cpp">
+      <Filter>service\UserInfoMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\UserInfoMgr\UserGroupMgr.cpp">
+      <Filter>service\UserInfoMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\UserInfoMgr\UserInfoMgr.cpp">
+      <Filter>service\UserInfoMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\Login\LoginMgr.cpp">
+      <Filter>service\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="service\Login\UserInfo.cpp">
+      <Filter>service\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="service\RealPlay\MediaBase.cpp">
+      <Filter>service\RealPlay</Filter>
+    </ClCompile>
+    <ClCompile Include="service\RealPlay\RealPlay.cpp">
+      <Filter>service\RealPlay</Filter>
+    </ClCompile>
+    <ClCompile Include="service\Record\RecordService.cpp">
+      <Filter>service\Record</Filter>
+    </ClCompile>
+    <ClCompile Include="service\Record\RecordPlanMgr.cpp">
+      <Filter>service\Record</Filter>
+    </ClCompile>
+    <ClCompile Include="service\Record\RecordList.cpp">
+      <Filter>service\Record</Filter>
+    </ClCompile>
+    <ClCompile Include="service\Record\Record.cpp">
+      <Filter>service\Record</Filter>
+    </ClCompile>
+    <ClCompile Include="service\Event\EventCallBackJob.cpp">
+      <Filter>service\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="service\Event\EventMgr.cpp">
+      <Filter>service\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="IVS\Aes256Operator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IVS\SDKMainService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="service\DevicMgr\DeviceGroupMgr.cpp">
+      <Filter>service\DeviceMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\DevicMgr\DeviceMgr.cpp">
+      <Filter>service\DeviceMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\AlarmLinkage\AlarmLinkageXMLProcess.cpp">
+      <Filter>service\AlarmLinkage</Filter>
+    </ClCompile>
+    <ClCompile Include="service\AlarmMgr\AlarmMgrXMLProcess.cpp">
+      <Filter>service\AlarmMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\LogMgr\LogMgrXMLProcess.cpp">
+      <Filter>service\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="service\Login\LoginXMLProcess.cpp">
+      <Filter>service\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="service\MotionDetecMgr\MotionDetecMgrXMLProcess.cpp">
+      <Filter>service\MotionDetecMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\Record\RecordXMLProcess.cpp">
+      <Filter>service\Record</Filter>
+    </ClCompile>
+    <ClCompile Include="service\UserInfoMgr\UserInfoMgrXMLProcess.cpp">
+      <Filter>service\UserInfoMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\common\BaseThread\_BaseThread.cpp">
+      <Filter>inc\common\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\common\BaseThread\BaseJob.cpp">
+      <Filter>inc\common\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\common\ToolsHelp\ToolsHelp.cpp">
+      <Filter>inc\common\toolshelp</Filter>
+    </ClCompile>
+    <ClCompile Include="service\DevicMgr\devEnum.cpp">
+      <Filter>service\DeviceMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\Login\LinkRouteMgr.cpp">
+      <Filter>service\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="service\DevicMgr\DeviceMgrXMLProcess.cpp">
+      <Filter>service\DeviceMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\DevicMgr\DeviceMgrXMLProcess.cpp">
+      <Filter>service\DevicMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="IVS\XmlProcess.cpp">
+      <Filter>inc\common\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\ZipUtils\unzip.cpp">
+      <Filter>inc\common\ZipUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\ZipUtils\zip.cpp">
+      <Filter>inc\common\ZipUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="service\PlayBack\PlaybackMgr.cpp">
+      <Filter>service\PlayBack</Filter>
+    </ClCompile>
+    <ClCompile Include="service\PlayBack\PlayBackXMLProcess.cpp">
+      <Filter>service\PlayBack</Filter>
+    </ClCompile>
+    <ClCompile Include="service\Record\RecordBookmark.cpp">
+      <Filter>service\Record</Filter>
+    </ClCompile>
+    <ClCompile Include="service\PtzControl\PtzControl.cpp">
+      <Filter>service\PtzControl</Filter>
+    </ClCompile>
+    <ClCompile Include="service\MotionDetecMgr\MotionDetection.cpp">
+      <Filter>service\MotionDetecMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\CapturePicture\CapturePicture.cpp">
+      <Filter>service\CapturePicture</Filter>
+    </ClCompile>
+    <ClCompile Include="service\CapturePicture\CapturePictureXMLProcess.cpp">
+      <Filter>service\CapturePicture</Filter>
+    </ClCompile>
+    <ClCompile Include="service\PlayBack\LocalPlayback.cpp">
+      <Filter>service\PlayBack</Filter>
+    </ClCompile>
+    <ClCompile Include="service\Download\Download.cpp">
+      <Filter>service\Download</Filter>
+    </ClCompile>
+    <ClCompile Include="IVS\Sys\LockGuard.cpp">
+      <Filter>inc\common\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="service\AlarmLinkage\AlarmLinkageMgr.cpp">
+      <Filter>service\AlarmLinkage</Filter>
+    </ClCompile>
+    <ClCompile Include="service\IntelligenceAnalysis\IntelligenceAnalysisMgr.cpp">
+      <Filter>service\IntelligenceAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="service\PlayBack\Playback.cpp">
+      <Filter>service\PlayBack</Filter>
+    </ClCompile>
+    <ClCompile Include="IVS\DomainRouteMgr.cpp">
+      <Filter>service\RouteMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\DevicMgr\DeviceParaConfigXMLProcess.cpp">
+      <Filter>service\DeviceMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\TVWallMgr\TVWallMgr.cpp">
+      <Filter>service\TVWallMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\UserDataMgr\UserDataMgr.cpp">
+      <Filter>service\UserDataMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\RealPlay\RealPlayMgr.cpp">
+      <Filter>service\RealPlay</Filter>
+    </ClCompile>
+    <ClCompile Include="IVS_SDK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\common\SDKTimer.cpp">
+      <Filter>inc\common\toolshelp</Filter>
+    </ClCompile>
+    <ClCompile Include="service\AutoResume\AutoResume.cpp">
+      <Filter>service\AutoResume</Filter>
+    </ClCompile>
+    <ClCompile Include="service\AutoResume\ReLink.cpp">
+      <Filter>service\AutoResume</Filter>
+    </ClCompile>
+    <ClCompile Include="service\AutoResume\CloseLinkCount.cpp">
+      <Filter>service\AutoResume</Filter>
+    </ClCompile>
+    <ClCompile Include="service\TVWallMgr\DecoderChannel.cpp">
+      <Filter>service\TVWallMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\TVWallMgr\AutoResumeTrigger.cpp">
+      <Filter>service\TVWallMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\tvwallmgr\PlayThread.cpp">
+      <Filter>service\TVWallMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="SDKSecurityClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\common\ToolsHelp\SDKConfig.cpp">
+      <Filter>inc\common\toolshelp</Filter>
+    </ClCompile>
+    <ClCompile Include="service\tvwallmgr\SDKDecoderMgr.cpp">
+      <Filter>service\TVWallMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\common\ToolsHelp\ParaCheck.cpp">
+      <Filter>inc\common\toolshelp</Filter>
+    </ClCompile>
+    <ClCompile Include="service\tvwallmgr\RDAChannel.cpp">
+      <Filter>service\TVWallMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\tvwallmgr\SDKChannel.cpp">
+      <Filter>service\TVWallMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\ClientNetwork\ClientNetworkMgr.cpp">
+      <Filter>service\ClientNetwork</Filter>
+    </ClCompile>
+    <ClCompile Include="service\ClientNetwork\ClientNetworkMgrXMLProcess.cpp">
+      <Filter>service\ClientNetwork</Filter>
+    </ClCompile>
+    <ClCompile Include="service\Record\RecordBackupMgr.cpp">
+      <Filter>service\Record</Filter>
+    </ClCompile>
+    <ClCompile Include="service\RealPlay\ParseSdp.cpp">
+      <Filter>service\RealPlay</Filter>
+    </ClCompile>
+    <ClCompile Include="service\RealPlay\MediaXMLProcess.cpp">
+      <Filter>service\RealPlay</Filter>
+    </ClCompile>
+    <ClCompile Include="service\Record\RecordQueryInCluster.cpp">
+      <Filter>service\Record</Filter>
+    </ClCompile>
+    <ClCompile Include="service\Download\DownloadManger.cpp">
+      <Filter>service\Download</Filter>
+    </ClCompile>
+    <ClCompile Include="service\Telepresence\TelepresenceMgr.cpp">
+      <Filter>service\Telepresence</Filter>
+    </ClCompile>
+    <ClCompile Include="service\Telepresence\TPPlayChannel.cpp">
+      <Filter>service\Telepresence</Filter>
+    </ClCompile>
+    <ClCompile Include="service\ReportMgr\ReportMgr.cpp">
+      <Filter>service\ReportMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\Voice\AudioMgr.cpp">
+      <Filter>service\Voice</Filter>
+    </ClCompile>
+    <ClCompile Include="service\Voice\AudioObj.cpp">
+      <Filter>service\Voice</Filter>
+    </ClCompile>
+    <ClCompile Include="service\Voice\StreamData.cpp">
+      <Filter>service\Voice</Filter>
+    </ClCompile>
+    <ClCompile Include="service\Event\StreamEventMgr.cpp">
+      <Filter>service\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="service\PtzControl\PtzControlXMLProcess.cpp">
+      <Filter>service\PtzControl</Filter>
+    </ClCompile>
+    <ClCompile Include="service\RealPlay\RealXMLProcess.cpp">
+      <Filter>service\RealPlay</Filter>
+    </ClCompile>
+    <ClCompile Include="service\RealPlay\RealPlayBookmark.cpp">
+      <Filter>service\RealPlay</Filter>
+    </ClCompile>
+    <ClCompile Include="service\UpgradeMgr\UpgradeMgr.cpp">
+      <Filter>service\UpgradeMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\UpgradeMgr\UpgradeMgrXMLProcess.cpp">
+      <Filter>service\UpgradeMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\NetKeyBoard\NetKeyBoard.cpp">
+      <Filter>service\NetKeyBoard</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IVS_SDK.rc" />
+  </ItemGroup>
+</Project>

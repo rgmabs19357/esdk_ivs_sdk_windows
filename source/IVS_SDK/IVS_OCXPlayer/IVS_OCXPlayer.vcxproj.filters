@@ -1,0 +1,860 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{0322f262-8cdf-4ba6-a8fa-764a1a1810f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\inc">
+      <UniqueIdentifier>{16c3101d-d14b-4b82-a9eb-6f339ac06d10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\src">
+      <UniqueIdentifier>{9e576d22-c8bf-4ba8-a6c0-4c471e4f2b9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service">
+      <UniqueIdentifier>{4fd6dc33-6e2d-439e-a744-53c699343923}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\AlarmLinkage">
+      <UniqueIdentifier>{31ce693d-0541-4673-a176-60ebcf716e8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\AlarmMgr">
+      <UniqueIdentifier>{f9f66261-5eb0-46b3-a5b8-33bdc1e7fee7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\IntelligenceAnalysis">
+      <UniqueIdentifier>{b4170ef5-c279-4e1a-b2f7-d5d37addc435}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\Log">
+      <UniqueIdentifier>{4b470e43-7d15-47f7-a474-763712251807}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\Login">
+      <UniqueIdentifier>{9edc6a47-d9bc-4499-89de-6cd0f5c2a509}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\MotionDetecMgr">
+      <UniqueIdentifier>{26e5855b-b8ec-409d-a938-1c79fc0e1c96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\PlayBack">
+      <UniqueIdentifier>{9cfb4151-d1a1-408f-82db-c4b7b959429c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\Record">
+      <UniqueIdentifier>{02e3a215-fb77-473a-a8db-60a8f19c869d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\UserInfoMgr">
+      <UniqueIdentifier>{8081e038-fbed-4323-8750-670f85af13cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\PtzControl">
+      <UniqueIdentifier>{3bcefdab-630f-47f0-8b84-cbc41c2e734d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XML">
+      <UniqueIdentifier>{a6eca503-27c9-4fd6-af2a-f54ef33c1fef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrl">
+      <UniqueIdentifier>{69af3dd6-f901-4dd7-a761-5e509a3b2cd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrl\translucent">
+      <UniqueIdentifier>{109e8af8-cd66-496c-8bca-3c50e30406f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrl\public">
+      <UniqueIdentifier>{e4e0d3e2-7d7c-46eb-a804-28745f52aa48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\Favorite">
+      <UniqueIdentifier>{99f97a4f-60f1-48a6-a62e-a5992d2fc2f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\tools">
+      <UniqueIdentifier>{a1034d4e-6f35-4c6d-9158-9873ed9af8cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ui\inc">
+      <UniqueIdentifier>{53a9912a-45ca-471e-9958-f2605b9dd2b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\src">
+      <UniqueIdentifier>{1cedc984-60c2-4298-a8b6-38baef61180d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\ZipUtils">
+      <UniqueIdentifier>{1f9d9608-3d48-4788-9e47-f7aab8ffe380}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\LocalConfig">
+      <UniqueIdentifier>{a10af422-d4ef-4e42-b8d2-6d54eafe4c69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\Skin">
+      <UniqueIdentifier>{fb03d8e0-0dd1-40f4-a405-402d01176f36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\DeviceMgr">
+      <UniqueIdentifier>{ba340cf6-7519-464d-8311-68185fbf5b50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\TVWallMgr">
+      <UniqueIdentifier>{c1c5acd0-8f28-436a-8d72-187c23425c28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\Draw">
+      <UniqueIdentifier>{d03a6b05-afb9-4fdf-8d11-90359079b598}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\Globality">
+      <UniqueIdentifier>{4db6fd73-54ad-46c4-84df-1f66e9cb5f2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\ClientNetwork">
+      <UniqueIdentifier>{989af3ca-f000-4116-bf9a-e49bfaccbf9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\ReportMgr">
+      <UniqueIdentifier>{bdf01b5d-1d50-4066-8b32-4c32e1835e7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\CapturePicture">
+      <UniqueIdentifier>{dff8e488-9203-4f74-ab69-08b26f6671ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\RealPlay">
+      <UniqueIdentifier>{7781b3fb-15d2-4ab3-a1a6-37db94436357}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service\UpgradeMgr">
+      <UniqueIdentifier>{3489ca44-3b4d-4b90-855e-f9b0e4e45617}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IVS_OCXPlayer.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\Logo.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="IVS_OCXPlayer.def">
+      <Filter>ui\src</Filter>
+    </None>
+    <None Include="Skin\Skins.xml">
+      <Filter>ui\Skin</Filter>
+    </None>
+    <None Include="bitmap\TALKBACK_NORMAL.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\NOSOUND_CLICK.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\NOSOUND_FOCUS.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\NOSOUND_GRAY.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\NOSOUND_NORMAL.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\NOTALKBACK_CLICK.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\NOTALKBACK_FOCUS.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\NOTALKBACK_GRAY.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\NOTALKBACK_NORMAL.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\SOUND_CLICK.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\SOUND_FOCUS.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\SOUND_GRAY.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\SOUND_NORMAL.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\TALKBACK_CLICK.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\TALKBACK_FOCUS.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\TALKBACK_GRAY.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\EXCHANGE.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\EXCHANGE_WARN.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\CURSOR_MAGNIFY.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\IVS_OCXPlayerCtrl.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\SIGN_NORMAL.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\SOUNDCTRL_SLIDER_CHANNEL.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\SOUNDCTRL_SLIDER_CHANNEL_ACTIVE.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\SIGN_CLICK.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\MAGBIFY_ZOOM_BACK.BMP.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\MAGBIFY_SIGN_CLICK.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\MAGBIFY_SIGN_NORMAL.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\magbify_slider_channel.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\soundctrl_slider_channel_white.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\soundctrl_slider_channel_active_white.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\NOSOUND_CLICK_WHITE.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\SOUND_CLICK_WHITE.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\SOUND_GRAY_WHITE.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\NOTALKBACK_NOTMAL_WHITE.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\NOTALKBACK_GRAY_WHITE.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\TALKBACK_GRAY_WHITE.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\TALKBACK_NORMAL_WHITE.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap\TALKBACK_CLICK_WHITE.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common\src\vos_event.c">
+      <Filter>common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="common\src\vos_mem.c">
+      <Filter>common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="common\src\vos_mutex.c">
+      <Filter>common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="common\src\vos_sema.c">
+      <Filter>common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="common\src\vos_thread.c">
+      <Filter>common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="common\src\vos_time.c">
+      <Filter>common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="service\AlarmMgr\OCXAlarmMgrXMLProcess.cpp">
+      <Filter>service\AlarmMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\DevicMgr\OCXDevicMgrXMLProcess.cpp">
+      <Filter>service\DeviceMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\LogMgr\OCXLogMgrXMLProcess.cpp">
+      <Filter>service\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="service\Login\OCXLoginXMLProcess.cpp">
+      <Filter>service\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="service\MotionDetecMgr\OCXMotionDetecMgrXMLProcess.cpp">
+      <Filter>service\MotionDetecMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\PtzControl\OCXPtzControlXMLProcess.cpp">
+      <Filter>service\PtzControl</Filter>
+    </ClCompile>
+    <ClCompile Include="service\Record\OCXRecordXMLProcess.cpp">
+      <Filter>service\Record</Filter>
+    </ClCompile>
+    <ClCompile Include="service\UserInfoMgr\OCXUserInfoMgrXMLProcess.cpp">
+      <Filter>service\UserInfoMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="DevEnumXML.cpp">
+      <Filter>service\DeviceMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\common\ToolsHelp\ToolsHelp.cpp">
+      <Filter>common\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="BitmapSlider.cpp">
+      <Filter>contrl\public</Filter>
+    </ClCompile>
+    <ClCompile Include="Favorite.cpp">
+      <Filter>service\Favorite</Filter>
+    </ClCompile>
+    <ClCompile Include="IVS_OCXPlayerCtrl.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="IVS_OCXPlayerPropPage.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="IVSButton.cpp">
+      <Filter>contrl\public</Filter>
+    </ClCompile>
+    <ClCompile Include="IVSMenu.cpp">
+      <Filter>contrl\public</Filter>
+    </ClCompile>
+    <ClCompile Include="IVSMenuHeader.cpp">
+      <Filter>contrl\public</Filter>
+    </ClCompile>
+    <ClCompile Include="memdc.cpp">
+      <Filter>common\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutMgr.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ParentWnd.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="TranVideoRealtimeBar.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="TranVideoTitleBar.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoPane.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoPaneMgr.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoStatic.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="XML\WindowSkinXML.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility.cpp">
+      <Filter>common\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\ZipUtils\unzip.cpp">
+      <Filter>common\ZipUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\ZipUtils\zip.cpp">
+      <Filter>common\ZipUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="XML\OCXXmlProcess.cpp">
+      <Filter>XML</Filter>
+    </ClCompile>
+    <ClCompile Include="service\PlayBack\OCXPlayBackXMLProcess.cpp">
+      <Filter>service\PlayBack</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinMgr.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalConfig.cpp">
+      <Filter>service\LocalConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalConfig.cpp">
+      <Filter>service\LocalConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="service\DevicMgr\OCXDeviceGroupMgr.cpp">
+      <Filter>service\DeviceMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\DevicMgr\OCXDeviceGroupMgrXMLProcess.cpp">
+      <Filter>service\DeviceMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\DevicMgr\OCXDeviceMgr.cpp">
+      <Filter>service\DeviceMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\DevicMgr\OCXDeviceParaConfig.cpp">
+      <Filter>service\DeviceMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\AlarmMgr\OCXAlarmMgr.cpp">
+      <Filter>service\AlarmMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\UserInfoMgr\OCXRoleMgr.cpp">
+      <Filter>service\UserInfoMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\UserInfoMgr\OCXUserGroupMgr.cpp">
+      <Filter>service\UserInfoMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\UserInfoMgr\OCXUserInfoMgr.cpp">
+      <Filter>service\UserInfoMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\AlarmLinkage\OCXAlarmLinkageMgr.cpp">
+      <Filter>service\AlarmLinkage</Filter>
+    </ClCompile>
+    <ClCompile Include="service\IntelligenceAnalysis\OCXIntelligenceAnalysisMgr.cpp">
+      <Filter>service\IntelligenceAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="service\LogMgr\OCXLogMgr.cpp">
+      <Filter>service\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="IVS_OCXPlayer.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="service\DevicMgr\OCXDeviceParaConfigXMLProcess.cpp">
+      <Filter>service\DeviceMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="PostEventXML.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="TranAnalysisToolBar.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="service\TVWallMgr\OCXTVWallMgr.cpp">
+      <Filter>service\TVWallMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\TVWallMgr\OCXTVWallXMLProcess.cpp">
+      <Filter>service\TVWallMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoSoundCtrl.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="service\Draw\OCXDrawXMLProcess.cpp">
+      <Filter>service\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="service\Record\OCXRecordMgr.cpp">
+      <Filter>service\Record</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\common\SDKTimer.cpp">
+      <Filter>service\LocalConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\common\ToolsHelp\SDKConfig.cpp">
+      <Filter>common\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\TranslucentButton.cpp">
+      <Filter>contrl\translucent</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\TranslucentDialog.cpp">
+      <Filter>contrl\translucent</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\TranslucentProgressBar.cpp">
+      <Filter>contrl\translucent</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\TranslucentUtility.cpp">
+      <Filter>contrl\translucent</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\TranslucentWnd.cpp">
+      <Filter>contrl\translucent</Filter>
+    </ClCompile>
+    <ClCompile Include="service\ClientNetwork\OCXClientNetworkMgr.cpp">
+      <Filter>service\ClientNetwork</Filter>
+    </ClCompile>
+    <ClCompile Include="service\ClientNetwork\OCXClientNetworkMgrXMLProcess.cpp">
+      <Filter>service\ClientNetwork</Filter>
+    </ClCompile>
+    <ClCompile Include="TranTVWallStatusBar.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="service\IntelligenceAnalysis\OCXIAXMLProcess.cpp">
+      <Filter>service\IntelligenceAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalIAMessageMgr.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="service\CapturePicture\OCXCapturePicture.cpp">
+      <Filter>service\CapturePicture</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalPlayMgr.cpp">
+      <Filter>ui\inc</Filter>
+    </ClCompile>
+    <ClCompile Include="service\CapturePicture\OCXCapturePictureXMLProcess.cpp">
+      <Filter>service\CapturePicture</Filter>
+    </ClCompile>
+    <ClCompile Include="TurnCruisePane.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\TranslucentStatic.cpp">
+      <Filter>contrl\translucent</Filter>
+    </ClCompile>
+    <ClCompile Include="TranZoomBar.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SyncPlayBackMgr.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PalyBackPane.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayTimerBar.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeStatic.cpp">
+      <Filter>contrl\public</Filter>
+    </ClCompile>
+    <ClCompile Include="service\ReportMgr\OCXReportMgr.cpp">
+      <Filter>service\ReportMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ZoomSliderCtrl.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="TranZoomTitleBar.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="I18N.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="service\TVWallMgr\TVWallSyncPlayBackMgr.cpp">
+      <Filter>service\TVWallMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="TranZoomDirctDlg.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="DitalPtzDlg.cpp">
+      <Filter>ui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="service\RealPlay\OCXRealPlayXMLProcess.cpp">
+      <Filter>service\RealPlay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IVS_SDK\IVS\Sys\LockGuard.cpp">
+      <Filter>common\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="service\UpgradeMgr\OCXUpgradeMgr.cpp">
+      <Filter>service\UpgradeMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="service\UpgradeMgr\OCXUpgradeMgrXMLProcess.cpp">
+      <Filter>service\UpgradeMgr</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\inc\vos.h">
+      <Filter>common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="common\inc\vos_common.h">
+      <Filter>common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="common\inc\vos_basetype.h">
+      <Filter>common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="common\inc\vos_config.h">
+      <Filter>common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="common\inc\vos_errno.h">
+      <Filter>common\src</Filter>
+    </ClInclude>
+    <ClInclude Include="service\AlarmMgr\OCXAlarmMgrXMLProcess.h">
+      <Filter>service\AlarmMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\DevicMgr\OCXDevicMgrXMLProcess.h">
+      <Filter>service\DeviceMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\LogMgr\OCXLogMgrXMLProcess.h">
+      <Filter>service\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="service\Login\OCXLoginXMLProcess.h">
+      <Filter>service\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="service\MotionDetecMgr\OCXMotionDetecMgrXMLProcess.h">
+      <Filter>service\MotionDetecMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\PtzControl\OCXPtzControlXMLProcess.h">
+      <Filter>service\PtzControl</Filter>
+    </ClInclude>
+    <ClInclude Include="service\Record\OCXRecordXMLProcess.h">
+      <Filter>service\Record</Filter>
+    </ClInclude>
+    <ClInclude Include="service\UserInfoMgr\OCXUserInfoMgrXMLProcess.h">
+      <Filter>service\UserInfoMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="XML\OCXXmlProcess.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IVS_COMMON\inc\hwsdk.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IVS_COMMON\inc\ivs_error.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IVS_COMMON\inc\nss_mt.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="DevEnumXML.h">
+      <Filter>service\DeviceMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="BitmapSlider.h">
+      <Filter>contrl\public</Filter>
+    </ClInclude>
+    <ClInclude Include="Favorite.h">
+      <Filter>service\Favorite</Filter>
+    </ClInclude>
+    <ClInclude Include="IVSButton.h">
+      <Filter>contrl\public</Filter>
+    </ClInclude>
+    <ClInclude Include="IVSMenu.h">
+      <Filter>contrl\public</Filter>
+    </ClInclude>
+    <ClInclude Include="IVSMenuHeader.h">
+      <Filter>contrl\public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\common\ToolsHelp\ToolsHelp.h">
+      <Filter>common\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="memdc.h">
+      <Filter>common\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMenuStruct.h">
+      <Filter>contrl\public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\QueryFiled.h">
+      <Filter>service</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.h">
+      <Filter>common\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="common_struct.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="XML\WindowSkinXML.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="constant.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ENUM_DEF.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="IVS_OCXPlayer.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="IVS_OCXPlayerCtrl.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="IVS_OCXPlayerPropPage.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutMgr.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="OCXDatatype.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ParentWnd.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="TranVideoRealtimeBar.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="TranVideoTitleBar.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="version.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoPane.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoPaneMgr.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoStatic.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\ZipUtils\zip.h">
+      <Filter>common\ZipUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\ZipUtils\unzip.h">
+      <Filter>common\ZipUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="service\PlayBack\OCXPlayBackXMLProcess.h">
+      <Filter>service\PlayBack</Filter>
+    </ClInclude>
+    <ClInclude Include="FunctionObject.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinMgr.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="LocalConfig.h">
+      <Filter>service\LocalConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="LocalConfig.h">
+      <Filter>service\LocalConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="service\DevicMgr\OCXDeviceGroupMgr.h">
+      <Filter>service\DeviceMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\DevicMgr\OCXDeviceGroupMgrXMLProcess.h">
+      <Filter>service\DeviceMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\DevicMgr\OCXDeviceMgr.h">
+      <Filter>service\DeviceMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\DevicMgr\OCXDeviceParaConfig.h">
+      <Filter>service\DeviceMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\AlarmMgr\OCXAlarmMgr.h">
+      <Filter>service\AlarmMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\UserInfoMgr\OCXRoleMgr.h">
+      <Filter>service\UserInfoMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\UserInfoMgr\OCXUserGroupMgr.h">
+      <Filter>service\UserInfoMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\UserInfoMgr\OCXUserInfoMgr.h">
+      <Filter>service\UserInfoMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\AlarmLinkage\OCXAlarmLinkageMgr.h">
+      <Filter>service\AlarmLinkage</Filter>
+    </ClInclude>
+    <ClInclude Include="service\IntelligenceAnalysis\OCXIntelligenceAnalysisMgr.h">
+      <Filter>service\IntelligenceAnalysis</Filter>
+    </ClInclude>
+    <ClInclude Include="service\LogMgr\OCXLogMgr.h">
+      <Filter>service\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="service\DevicMgr\OCXDeviceParaConfigXMLProcess.h">
+      <Filter>service\DeviceMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="PostEventXML.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="TranAnalysisToolBar.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="service\TVWallMgr\OCXTVWallMgr.h">
+      <Filter>service\TVWallMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\TVWallMgr\OCXTVWallXMLProcess.h">
+      <Filter>service\TVWallMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoSoundCtrl.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="service\Draw\OCXDrawXMLProcess.h">
+      <Filter>service\Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\common\SDKTimer.h">
+      <Filter>service\LocalConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="service\Record\OCXRecordMgr.h">
+      <Filter>service\Record</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalPlayMgr.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\common\ToolsHelp\SDKConfig.h">
+      <Filter>common\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TranslucentWnd.h">
+      <Filter>contrl\translucent</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TranslucentButton.h">
+      <Filter>contrl\translucent</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TranslucentDialog.h">
+      <Filter>contrl\translucent</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TranslucentProgressBar.h">
+      <Filter>contrl\translucent</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TranslucentUtility.h">
+      <Filter>contrl\translucent</Filter>
+    </ClInclude>
+    <ClInclude Include="service\ClientNetwork\OCXClientNetworkMgr.h">
+      <Filter>service\ClientNetwork</Filter>
+    </ClInclude>
+    <ClInclude Include="service\ClientNetwork\OCXClientNetworkMgrXMLProcess.h">
+      <Filter>service\ClientNetwork</Filter>
+    </ClInclude>
+    <ClInclude Include="TranTVWallStatusBar.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="service\IntelligenceAnalysis\OCXIAXMLProcess.h">
+      <Filter>service\IntelligenceAnalysis</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalIAMessageMgr.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="service\CapturePicture\OCXCapturePicture.h">
+      <Filter>service\CapturePicture</Filter>
+    </ClInclude>
+    <ClInclude Include="service\CapturePicture\OCXCapturePictureXMLProcess.h">
+      <Filter>service\CapturePicture</Filter>
+    </ClInclude>
+    <ClInclude Include="TurnCruisePane.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TranslucentStatic.h">
+      <Filter>contrl\translucent</Filter>
+    </ClInclude>
+    <ClInclude Include="TranZoomBar.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SyncPlayBackMgr.h">
+      <Filter>ui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="PalyBackPane.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeStatic.h">
+      <Filter>contrl\public</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayTimerBar.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="CTimeStaticMacro.h">
+      <Filter>contrl\public</Filter>
+    </ClInclude>
+    <ClInclude Include="service\ReportMgr\OCXReportMgr.h">
+      <Filter>service\ReportMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ZoomSliderCtrl.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="TranZoomTitleBar.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="I18N.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="service\TVWallMgr\TVWallSyncPlayBackMgr.h">
+      <Filter>service\TVWallMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="TranZoomDirctDlg.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="DitalPtzDlg.h">
+      <Filter>ui\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="service\RealPlay\OCXRealPlayXMLProcess.h">
+      <Filter>service\RealPlay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IVS_SDK\IVS\Sys\LockGuard.h">
+      <Filter>common\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="service\UpgradeMgr\OCXUpgradeMgr.h">
+      <Filter>service\UpgradeMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="service\UpgradeMgr\OCXUpgradeMgrXMLProcess.h">
+      <Filter>service\UpgradeMgr</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="IVS_OCXPlayer.idl">
+      <Filter>ui\src</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IVS_OCXPlayer.rc">
+      <Filter>ui\src</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

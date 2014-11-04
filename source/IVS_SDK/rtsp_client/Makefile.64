@@ -1,0 +1,40 @@
+#############################################################################
+# Makefile for building: gessctrl
+#############################################################################
+
+CC         = g++
+LINK       = g++
+
+ROOT_DIR  = ./
+
+C++FLAGS  += -pipe -g -Wall -fpic -O0 -m64 -DENV_LINUX
+LIBS      += -shared -fPIC -m64 -lm -lpthread -Wl
+
+TARGET_DIR = $(ROOT_DIR)lib/
+TARGET     = $(TARGET_DIR)libRtsp_client64.so
+
+INCPATH   += -I. -I../../../../platform/IVS_COMMON/CBB/release/new/header/ACE_wrappers/ -I./header/
+
+CPPFILES  += $(wildcard $(ROOT_DIR)/source/*.cpp)
+CFILES    += $(wildcard $(ROOT_DIR)*.c)
+HEADFILES += $(wildcard $(ROOT_DIR)/header/*.h)
+	     
+COBJS     =  $(CFILES:.c=.o)
+CPPOBJS   =  $(CPPFILES:.cpp=.O)
+
+all: $(TARGET)
+$(TARGET): $(CPPOBJS) $(COBJS)
+	$(LINK) $(C++FLAGS) -o $@ $(CPPOBJS) $(COBJS) $(LIBS)
+	
+%.o : %.c $(HEADFILES)
+	$(CC) -c  $(C++FLAGS) $(INCPATH) $< -o $@
+
+%.O : %.cpp $(HEADFILES)
+	$(CC) -c  $(C++FLAGS) $(INCPATH) $< -o $@	
+
+clean:
+	rm -f $(TARGET) $(CPPOBJS) $(COBJS)
+	
+copy:
+	cp ./lib/libRtsp_client64.so ../../../../platform/IVS_COMMON/CBB/release/new/linux/libivs_rtsp_client.so
+

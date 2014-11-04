@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{01DFB4E5-6C26-49A6-8FFD-E60D765DAFC7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>IVS_NetSource</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\..\IVS_SDK\build\windows\Debug\IVS_SDK\bin</OutDir>
+    <IntDir>..\..\..\IVS_SDK\build\windows\Debug\IVS_SDK\bin\temp_ns</IntDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\IVS_SDK\build\windows\release\IVS_SDK\bin</OutDir>
+    <IntDir>..\..\..\IVS_SDK\build\windows\release\IVS_SDK\bin\temp_ns</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;IVS_NETSOURCE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\inc;..\..\inc;..\..\inc\common;..\..\inc\common\log;..\..\inc\common\BaseThread;..\..\..\..\..\platform\IVS_COMMON\inc;..\..\..\..\..\platform\IVS_MP\IVS_MP_WINDOWS\inc</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>WS2_32.LIB;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "..\..\..\IVS_SDK\build\windows\debug\IVS_SDK\bin\IVS_NetSourced.lib" "..\..\..\IVS_SDK\lib\windows\Debug" /y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;IVS_NETSOURCE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\inc;..\..\inc;..\..\inc\common;..\..\inc\common\log;..\..\inc\common\BaseThread;..\..\..\..\..\platform\IVS_COMMON\inc;..\..\..\..\..\platform\IVS_MP\IVS_MP_WINDOWS\inc</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>WS2_32.LIB;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "..\..\..\IVS_SDK\build\windows\release\IVS_SDK\bin\IVS_NetSource.lib" "..\..\..\IVS_SDK\lib\windows\Release" /y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\IVS_COMMON\inc\hwsdk.h" />
+    <ClInclude Include="..\..\..\IVS_COMMON\inc\ivs_error.h" />
+    <ClInclude Include="..\..\inc\common\BaseThread\AutoMutex.h" />
+    <ClInclude Include="..\..\inc\common\BaseThread\BaseJob.h" />
+    <ClInclude Include="..\..\inc\common\BaseThread\_BaseThread.h" />
+    <ClInclude Include="..\..\inc\common\log\compat.h" />
+    <ClInclude Include="..\..\inc\common\log\ivs_io.h" />
+    <ClInclude Include="..\..\inc\common\log\ivs_log.h" />
+    <ClInclude Include="..\..\inc\common\log\log_conf.h" />
+    <ClInclude Include="..\..\inc\IVSCommon.h" />
+    <ClInclude Include="..\..\inc\IVS_NetSource.h" />
+    <ClInclude Include="..\..\inc\NetSourceCommon.h" />
+    <ClInclude Include="..\inc\ChannelInfo.h" />
+    <ClInclude Include="..\inc\Connection.h" />
+    <ClInclude Include="..\inc\MulticastSource.h" />
+    <ClInclude Include="..\inc\NetChannel.h" />
+    <ClInclude Include="..\inc\NetChannelMgr.h" />
+    <ClInclude Include="..\inc\NetSource.h" />
+    <ClInclude Include="..\inc\Rtp.h" />
+    <ClInclude Include="..\inc\RtspPacket.h" />
+    <ClInclude Include="..\inc\targetver.h" />
+    <ClInclude Include="..\inc\TcpConnection.h" />
+    <ClInclude Include="..\inc\TcpSource.h" />
+    <ClInclude Include="..\inc\UdpConnection.h" />
+    <ClInclude Include="..\inc\UdpSource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\inc\common\BaseThread\AutoMutex.cpp" />
+    <ClCompile Include="..\..\inc\common\BaseThread\BaseJob.cpp" />
+    <ClCompile Include="..\..\inc\common\BaseThread\_BaseThread.cpp" />
+    <ClCompile Include="..\..\inc\common\log\compat.cpp" />
+    <ClCompile Include="..\..\inc\common\log\ivs_log.cpp" />
+    <ClCompile Include="..\..\inc\common\log\log_conf.cpp" />
+    <ClCompile Include="..\src\ChannelInfo.cpp" />
+    <ClCompile Include="..\src\Connection.cpp" />
+    <ClCompile Include="..\src\dllmain.cpp" />
+    <ClCompile Include="..\src\IVS_NetSource.cpp" />
+    <ClCompile Include="..\src\MulticastSource.cpp" />
+    <ClCompile Include="..\src\NetChannel.cpp" />
+    <ClCompile Include="..\src\NetChannelMgr.cpp" />
+    <ClCompile Include="..\src\NetSource.cpp" />
+    <ClCompile Include="..\src\RtspPacket.cpp" />
+    <ClCompile Include="..\src\TcpConnection.cpp" />
+    <ClCompile Include="..\src\TcpSource.cpp" />
+    <ClCompile Include="..\src\UdpConnection.cpp" />
+    <ClCompile Include="..\src\UdpSource.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

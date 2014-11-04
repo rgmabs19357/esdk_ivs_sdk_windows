@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="service">
+      <UniqueIdentifier>{87bab4ea-c0c0-4439-8549-6c58d3914aee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{ebd19210-5982-49ba-a0fe-5f6e594cd338}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\TVWallService.h">
+      <Filter>service</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\ControlBus.h">
+      <Filter>service</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\Business.h">
+      <Filter>service</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\RDAProt.h">
+      <Filter>service</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\CumwTypes.h">
+      <Filter>service</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\CumwInterface.h">
+      <Filter>service</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\RDAProtStack.h">
+      <Filter>service</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\CumwCommon.h">
+      <Filter>service</Filter>
+    </ClInclude>
+    <ClInclude Include="common\vos.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\vos_basetype.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\vos_common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\vos_config.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\vos_errno.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\SyncQueue.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\Synchronized.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\CumwStatusClasses.h">
+      <Filter>service</Filter>
+    </ClInclude>
+    <ClInclude Include="common\LockGuard.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ConnMgr.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\LockableObject.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\NVSTimer.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\StreamMgr.h">
+      <Filter>service</Filter>
+    </ClInclude>
+    <ClInclude Include="common\SingleInst.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\RemoteDecoderMgr.h">
+      <Filter>service</Filter>
+    </ClInclude>
+    <ClInclude Include="common\TVWallInternalDef.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\common\ToolsHelp\ToolsHelp.h">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Service\TVWallService.cpp">
+      <Filter>service</Filter>
+    </ClCompile>
+    <ClCompile Include="Service\ControlBus.cpp">
+      <Filter>service</Filter>
+    </ClCompile>
+    <ClCompile Include="Service\Business.cpp">
+      <Filter>service</Filter>
+    </ClCompile>
+    <ClCompile Include="Service\RDAProt.cpp">
+      <Filter>service</Filter>
+    </ClCompile>
+    <ClCompile Include="Service\RDAProtStack.cpp">
+      <Filter>service</Filter>
+    </ClCompile>
+    <ClCompile Include="common\vos_event.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\vos_mem.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\vos_mutex.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\vos_sema.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\vos_thread.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\vos_time.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\Synchronized.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="Service\CumwStatusClasses.cpp">
+      <Filter>service</Filter>
+    </ClCompile>
+    <ClCompile Include="common\LockGuard.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ConnMgr.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\NVSTimer.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="Service\StreamMgr.cpp">
+      <Filter>service</Filter>
+    </ClCompile>
+    <ClCompile Include="Service\RemoteDecoderMgr.cpp">
+      <Filter>service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\common\ToolsHelp\ToolsHelp.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="IVS_TVWall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

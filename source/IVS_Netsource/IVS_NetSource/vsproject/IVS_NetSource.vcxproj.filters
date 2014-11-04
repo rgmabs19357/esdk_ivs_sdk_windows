@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="channel">
+      <UniqueIdentifier>{e1659619-e632-457d-b9c2-bf8b7e3038ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{4721836c-28f4-48b7-a7d4-d300e7e76305}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{b5c8ad4c-271b-4e5a-87dc-bc31169f501b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\basethread">
+      <UniqueIdentifier>{0746734d-ee7f-4397-a2df-13be4ea559f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="log">
+      <UniqueIdentifier>{2243664a-17bd-4f8d-aede-1c0eb3520ca9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\inc\targetver.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\IVS_NetSource.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\IVSCommon.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\UdpSource.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\common\BaseThread\_BaseThread.h">
+      <Filter>common\basethread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\common\BaseThread\AutoMutex.h">
+      <Filter>common\basethread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\common\BaseThread\BaseJob.h">
+      <Filter>common\basethread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\NetChannel.h">
+      <Filter>channel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\NetChannelMgr.h">
+      <Filter>channel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\ChannelInfo.h">
+      <Filter>channel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\RtspPacket.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IVS_COMMON\inc\hwsdk.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\Connection.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\TcpConnection.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\UdpConnection.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\common\log\compat.h">
+      <Filter>log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\common\log\ivs_io.h">
+      <Filter>log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\common\log\ivs_log.h">
+      <Filter>log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\common\log\log_conf.h">
+      <Filter>log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\NetSource.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\NetSourceCommon.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\IVS_COMMON\inc\ivs_error.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\TcpSource.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\Rtp.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\MulticastSource.h">
+      <Filter>net</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\dllmain.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IVS_NetSource.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\UdpSource.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\inc\common\BaseThread\_BaseThread.cpp">
+      <Filter>common\basethread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\inc\common\BaseThread\AutoMutex.cpp">
+      <Filter>common\basethread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\inc\common\BaseThread\BaseJob.cpp">
+      <Filter>common\basethread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\NetChannel.cpp">
+      <Filter>channel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\NetChannelMgr.cpp">
+      <Filter>channel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ChannelInfo.cpp">
+      <Filter>channel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\RtspPacket.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Connection.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TcpConnection.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\UdpConnection.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\inc\common\log\compat.cpp">
+      <Filter>log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\inc\common\log\ivs_log.cpp">
+      <Filter>log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\inc\common\log\log_conf.cpp">
+      <Filter>log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\NetSource.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TcpSource.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MulticastSource.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0C1DF514-92F6-4D3B-AA2F-8F90340F13E0}</ProjectGuid>
+    <RootNamespace>IVS_OCXPlayer</RootNamespace>
+    <Keyword>MFCActiveXProj</Keyword>
+    <SccProjectName>
+    </SccProjectName>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CLRSupport>false</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)build\windows\$(Configuration)\</OutDir>
+    <LinkIncremental>
+    </LinkIncremental>
+    <TargetExt>.ocx</TargetExt>
+    <TargetName>$(ProjectName)d</TargetName>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <OutDir>$(SolutionDir)build\windows\$(Configuration)\IVS_SDK\bin\</OutDir>
+    <ReferencePath>$(VCInstallDir)atlmfc\lib;$(VCInstallDir)lib</ReferencePath>
+    <IncludePath>$(SolutionDir)inc;$(SolutionDir)ThirdParty\ZipUtils;$(SolutionDir)inc\common\ToolsHelp;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)lib\release;$(SolutionDir)build\windows\debug\IVS_SDK\bin;$(LibraryPath)</LibraryPath>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <IntDir>$(Configuration)\</IntDir>
+    <ExecutablePath>$(SolutionDir)build\windows\debug\IVS_SDK\bin;$(ExecutablePath)</ExecutablePath>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>
+    </LinkIncremental>
+    <TargetExt>.ocx</TargetExt>
+    <OutDir>$(SolutionDir)build\windows\$(Configuration)\IVS_SDK\bin\</OutDir>
+    <ReferencePath>$(VCInstallDir)atlmfc\lib;$(VCInstallDir)lib</ReferencePath>
+    <IncludePath>$(SolutionDir)inc;$(SolutionDir)ThirdParty\ZipUtils;$(SolutionDir)inc\common\ToolsHelp;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)lib\release;$(SolutionDir)build\windows\release\IVS_SDK\bin;$(LibraryPath)</LibraryPath>
+    <IntDir>$(Configuration)\</IntDir>
+    <ExecutablePath>$(SolutionDir)build\windows\$(Configuration)\IVS_SDK\bin;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>$(IntDir)IVS_OCXPlayer.tlb</TypeLibraryName>
+      <HeaderFileName>$(ProjectName)idl.h</HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\Trans;..\IVS_IADraw\inc;..\IVS_SDK\IVS\Sys;..\IVS_SDKNetKeyBoard\inc;.\service\Draw;.\service\Login;.\service\AlarmLinkage;.\service\AlarmMgr;.\service\CapturePicture;.\service\DevicMgr;.\service\IntelligenceAnalysis;.\service\MotionDetecMgr;.\service\PtzControl;.\service\RealPlay;.\service\Record;.\service\UserInfoMgr;.\service\PlayBack;.\service\LogMgr;.\service\UpgradeMgr;.\service\ClientNetwork;.\service\TVWallMgr;.\service\ReportMgr;..\..\..\..\platform\IVS_COMMON\CBB\release\new\header\ivs_base;..\..\..\..\platform\IVS_BP\release\new\header\bp_sys;..\..\..\..\platform\IVS_BP\release\new\header\bp_base;..\..\..\..\platform\IVS_BP\release\new\header\bp_log;..\..\..\..\platform\IVS_COMMON\CBB\release\new\header\xml;..\..\..\..\platform\IVS_COMMON\CBB\release\new\header\ACE_wrappers;$(ProjectDir)common\inc;$(SolutionDir)inc;.\;..\..\..\..\platform\IVS_COMMON\inc;.\Core;.\XML;..\common\inc;$(SolutionDir)inc\common;$(SolutionDir)inc\common\ToolsHelp;$(SolutionDir)ThirdParty\ZipUtils;..\..\..\..\platform\IVS_COMMON\CBB\inc\ivs_base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4099;4005;4530;4509;4251</DisableSpecificWarnings>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <RegisterOutput>true</RegisterOutput>
+      <PerUserRedirection>false</PerUserRedirection>
+      <AdditionalDependencies>nafxcwd.lib;IVS_SDK.lib;tinyxml.lib;bp_logd.lib;bp_based.lib;ivs_based.lib;ACEd.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)d.ocx</OutputFile>
+      <AdditionalLibraryDirectories>..\lib\windows\Debug;..\..\..\..\platform\IVS_BP\release\new\windows\debug;$(SolutionDir)build\windows\$(Configuration)\IVS_SDK\bin;..\..\..\..\platform\IVS_COMMON\CBB\release\new\windows\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\IVS_OCXPlayer.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AssemblyDebug>true</AssemblyDebug>
+      <StackCommitSize>10485760</StackCommitSize>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib libcmtd.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>xcopy /e /y ".\Skin" "..\build\windows\debug\IVS_SDK\bin\Skin\"
+xcopy /e /y ".\defaultConfig" "..\build\windows\debug\IVS_SDK\bin\defaultConfig\"
+xcopy /y ".\defaultConfig\SDKConfig.xml" "..\build\windows\debug\IVS_SDK\bin\config\"
+xcopy /e /y ".\i18n" "..\build\windows\debug\IVS_SDK\bin\i18n\"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TypeLibraryName>$(IntDir)IVS_OCXPlayer.tlb</TypeLibraryName>
+      <HeaderFileName>$(ProjectName)idl.h</HeaderFileName>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>.\Trans;..\IVS_IADraw\inc;..\IVS_SDKNetKeyBoard\inc;.\service\Draw;.\service\Login;.\service\AlarmLinkage;.\service\AlarmMgr;.\service\CapturePicture;.\service\DevicMgr;.\service\IntelligenceAnalysis;.\service\MotionDetecMgr;.\service\PtzControl;.\service\RealPlay;.\service\Record;.\service\UserInfoMgr;.\service\PlayBack;.\service\LogMgr;.\service\UpgradeMgr;.\service\ClientNetwork;.\service\TVWallMgr;.\service\ReportMgr;..\..\..\..\platform\IVS_COMMON\CBB\release\new\header\ACE_wrappers;..\..\..\..\platform\IVS_COMMON\CBB\release\new\header\ivs_base;..\..\..\..\platform\IVS_BP\release\new\header\bp_sys;..\..\..\..\platform\IVS_BP\release\new\header\bp_base;..\..\..\..\platform\IVS_BP\release\new\header\bp_log;..\..\..\..\platform\IVS_COMMON\CBB\release\new\header\xml;$(ProjectDir)common\inc;$(SolutionDir)inc;.\;..\..\..\..\platform\IVS_COMMON\inc;.\Core;.\XML;..\common\inc;$(SolutionDir)inc\common;$(SolutionDir)inc\common\ToolsHelp;$(SolutionDir)ThirdParty\ZipUtils;..\..\..\..\platform\IVS_COMMON\CBB\inc\ivs_base;..\IVS_SDK\IVS\Sys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <DisableSpecificWarnings>4996;4099;4005;4530;4509;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <RegisterOutput>true</RegisterOutput>
+      <AdditionalDependencies>nafxcw.lib;IVS_SDK.lib;tinyxml.lib;bp_log.lib;bp_base.lib;ivs_base.lib;ACE.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).ocx</OutputFile>
+      <AdditionalLibraryDirectories>..\lib\windows\release;..\..\..\..\platform\IVS_BP\release\new\windows\release;$(SolutionDir)build\windows\$(Configuration)\IVS_SDK\bin;..\..\..\..\platform\IVS_COMMON\CBB\release\new\windows\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\IVS_OCXPlayer.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <PerUserRedirection>false</PerUserRedirection>
+      <StackCommitSize>10485760</StackCommitSize>
+      <IgnoreAllDefaultLibraries />
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>xcopy /e /y ".\Skin" "..\build\windows\release\IVS_SDK\bin\Skin\"
+xcopy /e /y ".\defaultConfig" "..\build\windows\release\IVS_SDK\bin\defaultConfig\"
+xcopy /y ".\defaultConfig\SDKConfig.xml" "..\build\windows\release\IVS_SDK\\bin\config\"
+xcopy /e /y ".\i18n" "..\build\windows\release\IVS_SDK\bin\i18n\"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>copy "..\lib\windows\Release\IVS_IADraw.dll" "..\build\windows\release\IVS_SDK\bin" /y
+copy "..\lib\windows\Release\IVS_IADraw.pdb" "..\build\windows\release\IVS_SDK\bin" /y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="bitmap\CURSOR_MAGNIFY.CUR" />
+    <None Include="bitmap\EXCHANGE.CUR" />
+    <None Include="bitmap\EXCHANGE_WARN.CUR" />
+    <None Include="bitmap\IVS_OCXPlayerCtrl.bmp" />
+    <None Include="bitmap\Logo.ico" />
+    <None Include="bitmap\MAGBIFY_SIGN_CLICK.bmp" />
+    <None Include="bitmap\MAGBIFY_SIGN_NORMAL.bmp" />
+    <None Include="bitmap\magbify_slider_channel.bmp" />
+    <None Include="bitmap\MAGBIFY_ZOOM_BACK.BMP.png" />
+    <None Include="bitmap\NOSOUND_CLICK.BMP" />
+    <None Include="bitmap\NOSOUND_CLICK_WHITE.bmp" />
+    <None Include="bitmap\NOSOUND_FOCUS.BMP" />
+    <None Include="bitmap\NOSOUND_GRAY.BMP" />
+    <None Include="bitmap\NOSOUND_NORMAL.BMP" />
+    <None Include="bitmap\NOTALKBACK_CLICK.BMP" />
+    <None Include="bitmap\NOTALKBACK_FOCUS.BMP" />
+    <None Include="bitmap\NOTALKBACK_GRAY.BMP" />
+    <None Include="bitmap\NOTALKBACK_GRAY_WHITE.bmp" />
+    <None Include="bitmap\NOTALKBACK_NORMAL.BMP" />
+    <None Include="bitmap\NOTALKBACK_NOTMAL_WHITE.bmp" />
+    <None Include="bitmap\SIGN_CLICK.BMP" />
+    <None Include="bitmap\SIGN_NORMAL.BMP" />
+    <None Include="bitmap\SOUNDCTRL_SLIDER_CHANNEL.BMP" />
+    <None Include="bitmap\SOUNDCTRL_SLIDER_CHANNEL_ACTIVE.BMP" />
+    <None Include="bitmap\soundctrl_slider_channel_active_white.bmp" />
+    <None Include="bitmap\soundctrl_slider_channel_white.bmp" />
+    <None Include="bitmap\SOUND_CLICK.BMP" />
+    <None Include="bitmap\SOUND_CLICK_WHITE.bmp" />
+    <None Include="bitmap\SOUND_FOCUS.BMP" />
+    <None Include="bitmap\SOUND_GRAY.BMP" />
+    <None Include="bitmap\SOUND_GRAY_WHITE.bmp" />
+    <None Include="bitmap\SOUND_NORMAL.BMP" />
+    <None Include="bitmap\TALKBACK_CLICK.BMP" />
+    <None Include="bitmap\TALKBACK_CLICK_WHITE.bmp" />
+    <None Include="bitmap\TALKBACK_FOCUS.BMP" />
+    <None Include="bitmap\TALKBACK_GRAY.BMP" />
+    <None Include="bitmap\TALKBACK_GRAY_WHITE.bmp" />
+    <None Include="bitmap\TALKBACK_NORMAL.BMP" />
+    <None Include="bitmap\TALKBACK_NORMAL_WHITE.bmp" />
+    <None Include="IVS_OCXPlayer.def" />
+    <None Include="IVS_OCXPlayer.ico" />
+    <None Include="Skin\Skins.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\inc\common\SDKTimer.cpp" />
+    <ClCompile Include="..\inc\common\ToolsHelp\SDKConfig.cpp" />
+    <ClCompile Include="..\inc\common\ToolsHelp\ToolsHelp.cpp" />
+    <ClCompile Include="..\IVS_SDK\IVS\Sys\LockGuard.cpp" />
+    <ClCompile Include="..\ThirdParty\ZipUtils\unzip.cpp" />
+    <ClCompile Include="..\ThirdParty\ZipUtils\zip.cpp" />
+    <ClCompile Include="BitmapSlider.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="common\src\vos_event.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="common\src\vos_mem.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="common\src\vos_mutex.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="common\src\vos_sema.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="common\src\vos_thread.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="common\src\vos_time.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\TranslucentButton.cpp" />
+    <ClCompile Include="Core\TranslucentDialog.cpp" />
+    <ClCompile Include="Core\TranslucentProgressBar.cpp" />
+    <ClCompile Include="Core\TranslucentStatic.cpp" />
+    <ClCompile Include="Core\TranslucentUtility.cpp" />
+    <ClCompile Include="Core\TranslucentWnd.cpp" />
+    <ClCompile Include="DevEnumXML.cpp" />
+    <ClCompile Include="DitalPtzDlg.cpp" />
+    <ClCompile Include="Favorite.cpp" />
+    <ClCompile Include="GlobalIAMessageMgr.cpp" />
+    <ClCompile Include="I18N.cpp" />
+    <ClCompile Include="IVSButton.cpp" />
+    <ClCompile Include="IVSMenu.cpp" />
+    <ClCompile Include="IVSMenuHeader.cpp" />
+    <ClCompile Include="IVS_OCXPlayer.cpp" />
+    <ClCompile Include="IVS_OCXPlayerCtrl.cpp" />
+    <ClCompile Include="IVS_OCXPlayerPropPage.cpp" />
+    <ClCompile Include="LayoutMgr.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="LocalConfig.cpp" />
+    <ClCompile Include="memdc.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="PalyBackPane.cpp" />
+    <ClCompile Include="ParentWnd.cpp" />
+    <ClCompile Include="GlobalPlayMgr.cpp" />
+    <ClCompile Include="PlayTimerBar.cpp" />
+    <ClCompile Include="PostEventXML.cpp" />
+    <ClCompile Include="service\AlarmLinkage\OCXAlarmLinkageMgr.cpp" />
+    <ClCompile Include="service\AlarmMgr\OCXAlarmMgr.cpp" />
+    <ClCompile Include="service\AlarmMgr\OCXAlarmMgrXMLProcess.cpp" />
+    <ClCompile Include="service\CapturePicture\OCXCapturePicture.cpp" />
+    <ClCompile Include="service\CapturePicture\OCXCapturePictureXMLProcess.cpp" />
+    <ClCompile Include="service\ClientNetwork\OCXClientNetworkMgr.cpp" />
+    <ClCompile Include="service\ClientNetwork\OCXClientNetworkMgrXMLProcess.cpp" />
+    <ClCompile Include="service\DevicMgr\OCXDeviceGroupMgr.cpp" />
+    <ClCompile Include="service\DevicMgr\OCXDeviceGroupMgrXMLProcess.cpp" />
+    <ClCompile Include="service\DevicMgr\OCXDeviceMgr.cpp" />
+    <ClCompile Include="service\DevicMgr\OCXDeviceParaConfig.cpp" />
+    <ClCompile Include="service\DevicMgr\OCXDeviceParaConfigXMLProcess.cpp" />
+    <ClCompile Include="service\DevicMgr\OCXDevicMgrXMLProcess.cpp" />
+    <ClCompile Include="service\Draw\OCXDrawXMLProcess.cpp" />
+    <ClCompile Include="service\IntelligenceAnalysis\OCXIAXMLProcess.cpp" />
+    <ClCompile Include="service\IntelligenceAnalysis\OCXIntelligenceAnalysisMgr.cpp" />
+    <ClCompile Include="service\Login\OCXLoginXMLProcess.cpp" />
+    <ClCompile Include="service\LogMgr\OCXLogMgr.cpp" />
+    <ClCompile Include="service\LogMgr\OCXLogMgrXMLProcess.cpp" />
+    <ClCompile Include="service\MotionDetecMgr\OCXMotionDetecMgrXMLProcess.cpp" />
+    <ClCompile Include="service\PlayBack\OCXPlayBackXMLProcess.cpp" />
+    <ClCompile Include="service\PtzControl\OCXPtzControlXMLProcess.cpp" />
+    <ClCompile Include="service\RealPlay\OCXRealPlayXMLProcess.cpp" />
+    <ClCompile Include="service\Record\OCXRecordMgr.cpp" />
+    <ClCompile Include="service\Record\OCXRecordXMLProcess.cpp" />
+    <ClCompile Include="service\ReportMgr\OCXReportMgr.cpp" />
+    <ClCompile Include="service\TVWallMgr\OCXTVWallMgr.cpp" />
+    <ClCompile Include="service\TVWallMgr\OCXTVWallXMLProcess.cpp" />
+    <ClCompile Include="service\TVWallMgr\TVWallSyncPlayBackMgr.cpp" />
+    <ClCompile Include="service\UpgradeMgr\OCXUpgradeMgr.cpp" />
+    <ClCompile Include="service\UpgradeMgr\OCXUpgradeMgrXMLProcess.cpp" />
+    <ClCompile Include="service\UserInfoMgr\OCXRoleMgr.cpp" />
+    <ClCompile Include="service\UserInfoMgr\OCXUserGroupMgr.cpp" />
+    <ClCompile Include="service\UserInfoMgr\OCXUserInfoMgr.cpp" />
+    <ClCompile Include="service\UserInfoMgr\OCXUserInfoMgrXMLProcess.cpp" />
+    <ClCompile Include="SkinMgr.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SyncPlayBackMgr.cpp" />
+    <ClCompile Include="TimeStatic.cpp" />
+    <ClCompile Include="TranAnalysisToolBar.cpp" />
+    <ClCompile Include="TranTVWallStatusBar.cpp" />
+    <ClCompile Include="TranVideoRealtimeBar.cpp" />
+    <ClCompile Include="TranVideoTitleBar.cpp" />
+    <ClCompile Include="TranZoomBar.cpp" />
+    <ClCompile Include="TranZoomDirctDlg.cpp" />
+    <ClCompile Include="TranZoomTitleBar.cpp" />
+    <ClCompile Include="TurnCruisePane.cpp" />
+    <ClCompile Include="Utility.cpp" />
+    <ClCompile Include="VideoPane.cpp" />
+    <ClCompile Include="VideoPaneMgr.cpp" />
+    <ClCompile Include="VideoSoundCtrl.cpp" />
+    <ClCompile Include="VideoStatic.cpp" />
+    <ClCompile Include="XML\OCXXmlProcess.cpp" />
+    <ClCompile Include="XML\WindowSkinXML.cpp" />
+    <ClCompile Include="ZoomSliderCtrl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\IVS_COMMON\inc\hwsdk.h" />
+    <ClInclude Include="..\..\IVS_COMMON\inc\ivs_error.h" />
+    <ClInclude Include="..\..\IVS_COMMON\inc\nss_mt.h" />
+    <ClInclude Include="..\inc\common\SDKTimer.h" />
+    <ClInclude Include="..\inc\common\ToolsHelp\SDKConfig.h" />
+    <ClInclude Include="..\inc\common\ToolsHelp\ToolsHelp.h" />
+    <ClInclude Include="..\inc\QueryFiled.h" />
+    <ClInclude Include="..\IVS_SDK\IVS\Sys\LockGuard.h" />
+    <ClInclude Include="..\ThirdParty\ZipUtils\unzip.h" />
+    <ClInclude Include="..\ThirdParty\ZipUtils\zip.h" />
+    <ClInclude Include="BitmapSlider.h" />
+    <ClInclude Include="common\inc\vos.h" />
+    <ClInclude Include="common\inc\vos_basetype.h" />
+    <ClInclude Include="common\inc\vos_common.h" />
+    <ClInclude Include="common\inc\vos_config.h" />
+    <ClInclude Include="common\inc\vos_errno.h" />
+    <ClInclude Include="common_struct.h" />
+    <ClInclude Include="constant.h" />
+    <ClInclude Include="Core\TranslucentButton.h" />
+    <ClInclude Include="Core\TranslucentDialog.h" />
+    <ClInclude Include="Core\TranslucentProgressBar.h" />
+    <ClInclude Include="Core\TranslucentStatic.h" />
+    <ClInclude Include="Core\TranslucentUtility.h" />
+    <ClInclude Include="Core\TranslucentWnd.h" />
+    <ClInclude Include="CTimeStaticMacro.h" />
+    <ClInclude Include="DevEnumXML.h" />
+    <ClInclude Include="DitalPtzDlg.h" />
+    <ClInclude Include="ENUM_DEF.h" />
+    <ClInclude Include="Favorite.h" />
+    <ClInclude Include="FunctionObject.h" />
+    <ClInclude Include="GlobalIAMessageMgr.h" />
+    <ClInclude Include="I18N.h" />
+    <ClInclude Include="IVSButton.h" />
+    <ClInclude Include="IVSMenu.h" />
+    <ClInclude Include="IVSMenuHeader.h" />
+    <ClInclude Include="IVS_OCXPlayer.h" />
+    <ClInclude Include="IVS_OCXPlayerCtrl.h" />
+    <ClInclude Include="IVS_OCXPlayerPropPage.h" />
+    <ClInclude Include="LayoutMgr.h" />
+    <ClInclude Include="LocalConfig.h" />
+    <ClInclude Include="memdc.h" />
+    <ClInclude Include="MyMenuStruct.h" />
+    <ClInclude Include="OCXDatatype.h" />
+    <ClInclude Include="PalyBackPane.h" />
+    <ClInclude Include="ParentWnd.h" />
+    <ClInclude Include="GlobalPlayMgr.h" />
+    <ClInclude Include="PlayTimerBar.h" />
+    <ClInclude Include="PostEventXML.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="service\AlarmLinkage\OCXAlarmLinkageMgr.h" />
+    <ClInclude Include="service\AlarmMgr\OCXAlarmMgr.h" />
+    <ClInclude Include="service\AlarmMgr\OCXAlarmMgrXMLProcess.h" />
+    <ClInclude Include="service\CapturePicture\OCXCapturePicture.h" />
+    <ClInclude Include="service\CapturePicture\OCXCapturePictureXMLProcess.h" />
+    <ClInclude Include="service\ClientNetwork\OCXClientNetworkMgr.h" />
+    <ClInclude Include="service\ClientNetwork\OCXClientNetworkMgrXMLProcess.h" />
+    <ClInclude Include="service\DevicMgr\OCXDeviceGroupMgr.h" />
+    <ClInclude Include="service\DevicMgr\OCXDeviceGroupMgrXMLProcess.h" />
+    <ClInclude Include="service\DevicMgr\OCXDeviceMgr.h" />
+    <ClInclude Include="service\DevicMgr\OCXDeviceParaConfig.h" />
+    <ClInclude Include="service\DevicMgr\OCXDeviceParaConfigXMLProcess.h" />
+    <ClInclude Include="service\DevicMgr\OCXDevicMgrXMLProcess.h" />
+    <ClInclude Include="service\Draw\OCXDrawXMLProcess.h" />
+    <ClInclude Include="service\IntelligenceAnalysis\OCXIAXMLProcess.h" />
+    <ClInclude Include="service\IntelligenceAnalysis\OCXIntelligenceAnalysisMgr.h" />
+    <ClInclude Include="service\Login\OCXLoginXMLProcess.h" />
+    <ClInclude Include="service\LogMgr\OCXLogMgr.h" />
+    <ClInclude Include="service\LogMgr\OCXLogMgrXMLProcess.h" />
+    <ClInclude Include="service\MotionDetecMgr\OCXMotionDetecMgrXMLProcess.h" />
+    <ClInclude Include="service\PlayBack\OCXPlayBackXMLProcess.h" />
+    <ClInclude Include="service\PtzControl\OCXPtzControlXMLProcess.h" />
+    <ClInclude Include="service\RealPlay\OCXRealPlayXMLProcess.h" />
+    <ClInclude Include="service\Record\OCXRecordMgr.h" />
+    <ClInclude Include="service\Record\OCXRecordXMLProcess.h" />
+    <ClInclude Include="service\ReportMgr\OCXReportMgr.h" />
+    <ClInclude Include="service\TVWallMgr\OCXTVWallMgr.h" />
+    <ClInclude Include="service\TVWallMgr\OCXTVWallXMLProcess.h" />
+    <ClInclude Include="service\TVWallMgr\TVWallSyncPlayBackMgr.h" />
+    <ClInclude Include="service\UpgradeMgr\OCXUpgradeMgr.h" />
+    <ClInclude Include="service\UpgradeMgr\OCXUpgradeMgrXMLProcess.h" />
+    <ClInclude Include="service\UserInfoMgr\OCXRoleMgr.h" />
+    <ClInclude Include="service\UserInfoMgr\OCXUserGroupMgr.h" />
+    <ClInclude Include="service\UserInfoMgr\OCXUserInfoMgr.h" />
+    <ClInclude Include="service\UserInfoMgr\OCXUserInfoMgrXMLProcess.h" />
+    <ClInclude Include="SkinMgr.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SyncPlayBackMgr.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TimeStatic.h" />
+    <ClInclude Include="TranAnalysisToolBar.h" />
+    <ClInclude Include="TranTVWallStatusBar.h" />
+    <ClInclude Include="TranVideoRealtimeBar.h" />
+    <ClInclude Include="TranVideoTitleBar.h" />
+    <ClInclude Include="TranZoomBar.h" />
+    <ClInclude Include="TranZoomDirctDlg.h" />
+    <ClInclude Include="TranZoomTitleBar.h" />
+    <ClInclude Include="TurnCruisePane.h" />
+    <ClInclude Include="Utility.h" />
+    <ClInclude Include="version.h" />
+    <ClInclude Include="VideoPane.h" />
+    <ClInclude Include="VideoPaneMgr.h" />
+    <ClInclude Include="VideoSoundCtrl.h" />
+    <ClInclude Include="VideoStatic.h" />
+    <ClInclude Include="XML\OCXXmlProcess.h" />
+    <ClInclude Include="XML\WindowSkinXML.h" />
+    <ClInclude Include="ZoomSliderCtrl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IVS_OCXPlayer.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="IVS_OCXPlayer.idl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="IVS_OCXPlayer.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

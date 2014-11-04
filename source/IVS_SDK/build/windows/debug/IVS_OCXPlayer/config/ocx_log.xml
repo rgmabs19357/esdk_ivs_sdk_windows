@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<Log>
+  <LogBasePath>${BP_HOME}/log</LogBasePath>
+  <RunLog>
+    <IsBufferDebugLog>True</IsBufferDebugLog> 
+    <BufferNumber>100</BufferNumber> 
+    <FileNumber>10</FileNumber>
+    <FileSize>20</FileSize>
+  </RunLog>
+  <DebugLog>
+    <DebugLogSwitch>True</DebugLogSwitch>
+    <FileNumber>10</FileNumber>
+    <FileSize>20</FileSize>
+  </DebugLog>
+  <InterfaceLog>
+    <FileNumber>20</FileNumber>
+    <FileSize>20</FileSize>
+  </InterfaceLog>
+  <SecurityLog>
+    <FileNumber>20</FileNumber>
+    <FileSize>20</FileSize>
+  </SecurityLog>
+  <OperationLog>
+    <FileNumber>20</FileNumber>
+    <FileSize>20</FileSize>
+  </OperationLog>
+</Log>
+
